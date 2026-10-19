@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kisah Tenggelamnya Kapal Titanic, Kapal yang "Tidak Dapat Tenggelam" dan Akhirnya Tenggelam | KBDI</title>
+<meta name="description" content="Dari galangan sampai dasar laut: urutan perjalanan Titanic, dan sembilan fakta serta mitos yang diluruskan berdasarkan laporan penyelidikan 1912 dan sumber kredibel.">
+<meta property="og:title" content="Kisah Tenggelamnya Kapal Titanic">
+<meta property="og:description" content="Kapal yang &quot;tidak dapat tenggelam&quot; dan akhirnya tenggelam: urutan perjalanan, ilustrasi bergerak, dan fakta versus mitos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0e14;--bg2:#10151f;--card:#141a26;--text:#e8ebf0;--muted:#a3adbd;--line:rgba(255,255,255,.12);--accent:#e87722;--soft:rgba(232,119,34,.16)}
+html.light{--bg:#f6f4ef;--bg2:#ffffff;--card:#ffffff;--text:#1c2230;--muted:#586172;--line:rgba(0,0,0,.14);--soft:rgba(232,119,34,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(160deg,#07101e 0%,#050a14 55%,#03060d 100%)!important;color:#ffffff!important}
+.hero-map{position:absolute;top:0;right:0;bottom:0;width:66%;pointer-events:none}
+.hero-map svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-map::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050a14 0%,rgba(5,10,20,.9) 9%,rgba(5,10,20,0) 27%);pointer-events:none}
+.hero .sd{display:none}
+html.light .hero .sd{display:inline}
+html.light .hero .sn2{display:none}
+.hero-content{position:relative;z-index:2;padding:6rem 5% 5rem;max-width:640px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1.2rem;opacity:0;animation:fadeUp .7s ease .1s forwards;color:#f39a4d!important}
+.hero-eyebrow::before{content:"";display:inline-block;width:28px;height:2px;background:#f39a4d;border-radius:2px}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(2.3rem,5vw,4.3rem);line-height:.98;letter-spacing:.012em;margin-bottom:1rem;opacity:0;animation:fadeUp .8s ease .2s forwards;color:#ffffff!important}
+.hero-title span{color:#e87722!important}
+.hero-subtitle{font-family:'Source Serif 4',serif;font-size:clamp(1rem,2.4vw,1.25rem);font-weight:300;font-style:italic;max-width:520px;margin-bottom:2rem;line-height:1.5;opacity:0;animation:fadeUp .8s ease .35s forwards;color:#c9d2e0!important}
+.hero-meta{display:flex;flex-wrap:wrap;gap:1.1rem;align-items:center;opacity:0;animation:fadeUp .7s ease .5s forwards}
+.hero-meta-item{font-family:'DM Sans',sans-serif;font-size:.78rem;display:flex;align-items:center;gap:6px;color:#9fb0c8!important}
+.hero-tag{display:inline-block;font-family:'DM Sans',sans-serif;padding:4px 12px;border:1px solid rgba(243,154,77,.35);border-radius:20px;font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#f39a4d!important}
+@keyframes fadeUp{0%{opacity:0;transform:translateY(18px)}100%{opacity:1;transform:translateY(0)}}
+@media(max-width:768px){.hero{flex-direction:column;align-items:stretch;min-height:0}.hero-map{position:relative;width:100%;height:64vw;max-height:360px;min-height:200px}.hero-map::after{background:linear-gradient(rgba(5,10,20,0) 62%,#050a14 100%)}.hero-content{padding:1.4rem 5% 3.2rem;max-width:none}.hero-title{font-size:clamp(2.1rem,9.2vw,3.2rem)}}
+@media(prefers-reduced-motion:reduce){.hero-eyebrow,.hero-title,.hero-subtitle,.hero-meta{animation:none;opacity:1}}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+.sec{padding:56px 0 6px}
+.kicker{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+h2{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(27px,5vw,38px);line-height:1.2;margin:0 0 22px}
+h3{font-family:'DM Sans',sans-serif;font-weight:700;font-size:21px;line-height:1.35;margin:0 0 10px}
+p{margin:0 0 1.15em}
+a{color:var(--accent)}
+.lead{font-size:20px;color:var(--text)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:26px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stat b{display:block;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:38px;line-height:1;color:var(--accent);letter-spacing:.02em}
+.stat span{display:block;font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.4;color:var(--muted);margin-top:4px}
+.step{position:relative;padding-left:58px;margin:0 0 54px}
+.step::before{content:"";position:absolute;left:19px;top:44px;bottom:-40px;width:2px;background:var(--line)}
+.step:last-child::before{display:none}
+.num{position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:24px;line-height:40px;text-align:center}
+.time{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--accent);margin-bottom:2px}
+.ill{margin:22px 0 6px}
+.frame{border-radius:12px;overflow:hidden;background:#03060d;border:1px solid var(--line)}
+.vz{display:block;width:100%;height:auto}
+.figbar{display:flex;gap:12px;justify-content:space-between;align-items:flex-start;margin-top:10px}
+figcaption{font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.55;color:var(--muted)}
+.btn{font-family:'DM Sans',sans-serif;font-size:13px;padding:7px 13px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:8px;cursor:pointer;flex-shrink:0}
+.btn:disabled{opacity:.4;cursor:default}
+.btn.rp,#brp{display:inline-flex;align-items:center;gap:8px;background:#2f5aa8;border-color:#2f5aa8;color:#fff;font-weight:700;font-size:14px;padding:10px 18px;animation:nudge 2.6s ease-in-out infinite}
+.btn.rp:hover,#brp:hover{background:#3b6bc2;border-color:#3b6bc2}
+@keyframes nudge{0%,100%{box-shadow:0 0 0 0 rgba(91,134,229,.55)}60%{box-shadow:0 0 0 9px rgba(91,134,229,0)}}
+@media(prefers-reduced-motion:reduce){.btn.rp,#brp{animation:none}}
+.nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.dots{display:flex;gap:10px;align-items:center}
+.dots button{width:14px;height:14px;padding:0;border-radius:50%;border:1px solid var(--muted);background:transparent;cursor:pointer}
+.dots button[aria-current="true"]{background:var(--accent);border-color:var(--accent)}
+.note{font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.6;color:var(--muted);border-left:3px solid var(--accent);padding:6px 0 6px 14px;margin:18px 0}
+details.card{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:0 0 12px;overflow:hidden}
+details.card summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;gap:12px;align-items:flex-start;font-family:'DM Sans',sans-serif;font-weight:700;font-size:17px;line-height:1.4}
+details.card summary::-webkit-details-marker{display:none}
+details.card summary::after{content:"+";margin-left:auto;color:var(--accent);font-size:22px;line-height:1.2}
+details.card[open] summary::after{content:"\2212"}
+.cn{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--soft);color:var(--accent);display:grid;place-items:center;font-size:14px}
+.cb{padding:0 18px 18px 58px;font-size:17px;line-height:1.75}
+.cb p{margin:0 0 .9em}
+.lbl{display:inline-block;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:2px 8px;border-radius:6px;margin-bottom:4px}
+.lbl.m{background:rgba(217,83,79,.16);color:#e0655f}
+.lbl.f{background:rgba(46,158,106,.16);color:#2e9e6a}
+html.light .lbl.m{color:#b3322d}
+html.light .lbl.f{color:#1d7a4f}
+.src{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--muted)}
+.bars{margin:12px 0 14px}
+.brow{display:grid;grid-template-columns:96px 1fr 120px;gap:10px;align-items:center;margin:0 0 8px;font-family:'DM Sans',sans-serif;font-size:14px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width 1.1s ease}
+details[open] .bar i{width:var(--w)}
+.brow em{font-style:normal;color:var(--muted);font-size:13px}
+.bar i.w{background:#5ec2a0}
+.bar i.t{background:#6c8ed6}
+.bn{font-family:'DM Sans',sans-serif;font-size:13px;line-height:1.5;color:var(--muted);margin:0 0 14px}
+.bh2{font-family:'DM Sans',sans-serif;font-weight:700;font-size:15px;margin:18px 0 6px}
+.bh{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 0 6px}
+.tbl{width:100%;border-collapse:collapse;font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.5;margin:8px 0 22px}
+.tbl th{text-align:left;padding:10px 12px;border-bottom:2px solid var(--accent);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.tbl td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl td:first-child{font-weight:700;width:38%}
+.srcs{font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.6;padding-left:20px;margin:0 0 18px}
+.srcs li{margin:0 0 4px}
+.srcg{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:22px 0 6px}
+.end{padding-bottom:70px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:640px){
+body{font-size:17px}
+.lead{font-size:18px}
+.step{padding-left:48px}
+.step::before{left:15px}
+.num{width:32px;height:32px;font-size:20px;line-height:32px}
+.cb{padding:0 16px 16px 16px}
+.brow{grid-template-columns:78px 1fr;grid-template-areas:"a b" "c c"}
+.brow em{grid-column:1/-1}
+.tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
+.tbl thead{display:none}
+.tbl tr{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:8px 12px}
+.tbl td{border:0;padding:4px 0}
+.tbl td:first-child{width:100%;color:var(--accent)}
+.figbar{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+.vz text{font-family:'DM Sans',sans-serif}
+.z1{font-size:24px;font-weight:500;fill:#cfe0ff}
+.z2{font-size:16px;fill:#9fb4d6}
+.z3{font-size:18px;font-weight:500;fill:#cfe0ff}
+.z4{font-size:22px;font-weight:500;fill:#cfe0ff}
+.z5{font-size:16px;fill:#cfe0ff}
+.z6{font-size:14px;fill:#7a8aa4}
+.z7{font-size:20px;font-weight:500;fill:#cfe0ff}
+.zr{fill:#ff9b8f}
+.zy{fill:#fff0b8}
+.zl{fill:#9fb4d6}
+@media(max-width:640px){
+.z1{font-size:30px!important}.z2{font-size:21px!important}.z3{font-size:23px!important}.z4{font-size:27px!important}.z5{font-size:21px!important}.z6{font-size:18px!important}.z7{font-size:25px!important}
+}
+@keyframes cin{to{opacity:1}}
+@keyframes hid{to{opacity:0}}
+@keyframes win{0%,100%{opacity:1}}
+@keyframes bbk{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes bobA{0%,100%{transform:translateY(2px)}50%{transform:translateY(-2px)}}
+@keyframes wv{to{transform:translateX(170px)}}
+@keyframes fk{0%,100%{opacity:1}50%{opacity:.2}}
+@keyframes tw{0%,100%{opacity:1}50%{opacity:.5}}
+@keyframes sn{0%{transform:translateY(-10px);opacity:0}20%{opacity:.6}100%{transform:translateY(80px);opacity:0}}
+/* cruise (hero dan langkah 1) */
+.cz .bob{transform-origin:340px 300px;animation:z_bob 6s ease-in-out infinite}
+.cz .bob2{animation:z_bob2 6s ease-in-out infinite}
+.cz .w{animation:wv 6s linear infinite}
+.cz .sm{opacity:0;animation:z_sm 6s linear infinite}
+.cz .tw{animation:tw 3s ease-in-out infinite}
+.cz .fo{transform-origin:340px 306px;animation:z_fo 3s ease-in-out infinite}
+.cz .rf{animation:z_rf 4s ease-in-out infinite}
+.cz .ss{opacity:0;animation:z_ss 9s linear infinite}
+.cz .cl{animation:z_cl 70s linear infinite}
+.cz .gu{animation:z_gu 22s linear infinite}
+.cz .fl{transform-box:fill-box;transform-origin:center;animation:z_fl .7s ease-in-out infinite alternate}
+.cz .dj{opacity:0;animation:z_dj 9s linear infinite}
+@keyframes z_bob{0%,100%{transform:translateY(4px) rotate(.5deg)}50%{transform:translateY(-6px) rotate(-.5deg)}}
+@keyframes z_bob2{0%,100%{transform:translateY(2px)}50%{transform:translateY(-3px)}}
+@keyframes z_sm{0%{opacity:0;transform:translate(0,0) scale(.8)}20%{opacity:.4}100%{opacity:0;transform:translate(26px,-22px) scale(1.5)}}
+@keyframes z_fo{0%,100%{opacity:.85;transform:scaleX(1)}50%{opacity:.6;transform:scaleX(1.08)}}
+@keyframes z_rf{0%,100%{opacity:1}50%{opacity:.55}}
+@keyframes z_ss{0%,70%{opacity:0;transform:translate(0,0)}72%{opacity:1}80%{opacity:0;transform:translate(-120px,50px)}100%{opacity:0}}
+@keyframes z_cl{from{transform:translateX(-160px)}to{transform:translateX(720px)}}
+@keyframes z_gu{from{transform:translateX(-60px)}to{transform:translateX(740px)}}
+@keyframes z_fl{to{transform:scaleY(.45)}}
+@keyframes z_dj{0%,55%{opacity:0;transform:translate(-40px,22px) rotate(-50deg)}60%{opacity:1}75%{opacity:1;transform:translate(0,-34px) rotate(0)}90%{opacity:1;transform:translate(40px,22px) rotate(50deg)}95%,100%{opacity:0;transform:translate(46px,28px) rotate(55deg)}}
+/* K kebocoran */
+#k .bob{transform-origin:340px 280px;animation:bobA 6s ease-in-out infinite}
+#k .sh{transform-origin:340px 280px}
+#k.go .sh{animation:k_shk 3.5s linear forwards,k_tilt 4.5s ease-in-out 3.5s forwards}
+#k .ice,#k .ice2{opacity:0;transform:translate(0,268px)}
+#k.go .ice,#k.go .ice2{animation:k_ip 11s linear forwards}
+#k .spk{animation:fk .25s linear infinite}
+#k .fs{opacity:.88}
+#k.go .fs{animation:k_fsd 1s ease-out 2.2s forwards}
+#k .cut{opacity:0}
+#k.go .cut{animation:cin .8s ease-out 2.5s forwards}
+#k .gash{opacity:0}
+#k.go .gash{animation:cin .5s ease-out 1.4s forwards}
+#k.go .ph{animation:hid .01s linear 2.5s forwards}
+#k .wt{transform-origin:0 292px;transform:scaleY(0)}
+#k.go .wt{animation:k_wf 1.2s ease-out forwards}
+#k .up{opacity:0}
+#k.go .up{animation:k_fw 1s linear infinite,cin .3s ease-out forwards}
+#k .la,#k .lb,#k .c{opacity:0}
+#k.go .la{animation:win 3.2s linear .3s}
+#k.go .lb{animation:cin 1s ease-out 6.8s forwards}
+#k.go .c0{opacity:1;animation:hid .01s linear 3.5s forwards}
+#k.go .c1{animation:win .8s linear 3.5s}
+#k.go .c2{animation:win .8s linear 4.3s}
+#k.go .c3{animation:win .8s linear 5.1s}
+#k.go .c4{animation:win .8s linear 5.9s}
+#k.go .c5{animation:cin .3s linear 6.7s forwards}
+#k .w{animation:wv 5s linear infinite}
+@keyframes k_shk{0%,30%{transform:translate(0,0)}34%{transform:translate(-3px,1px)}40%{transform:translate(3px,-1px)}46%{transform:translate(-2px,1px)}52%{transform:translate(2px,0)}60%,100%{transform:translate(0,0)}}
+@keyframes k_tilt{from{transform:rotate(0)}to{transform:rotate(2.5deg)}}
+@keyframes k_ip{0%{transform:translate(0,268px);opacity:1}90%{transform:translate(300px,268px);opacity:1}100%{transform:translate(340px,268px);opacity:0}}
+@keyframes k_fsd{to{opacity:.5}}
+@keyframes k_wf{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes k_fw{from{stroke-dashoffset:0}to{stroke-dashoffset:-16}}
+/* E evakuasi */
+#e .sh{transform-origin:340px 280px}
+#e.go .sh{animation:e_tl 10s ease-in-out forwards}
+#e .bf{fill:#8a93a6}
+#e.go .bf{animation:e_cv .8s linear 1s forwards}
+#e .pd{opacity:0}
+#e.go .pd{animation:cin .6s ease-out 1.8s forwards,e_dim 1s linear 8s forwards}
+#e .pp{opacity:0}
+#e.go .b1{animation:e_fol 3s linear forwards,e_low 2s ease-in 3s forwards,e_away 3.5s linear 5s forwards}
+#e.go .b2{animation:e_fol 5s linear forwards,e_low 2s ease-in 5s forwards,e_away2 3.5s linear 7s forwards}
+#e.go .b3{animation:e_fol 6s linear forwards,e_low 2s ease-in 6s forwards,e_away 3.5s linear 8s forwards}
+#e.go .b4{animation:e_fol 7s linear forwards,e_low 2s ease-in 7s forwards,e_away2 3.5s linear 9s forwards}
+#e.go .p1{animation:cin .3s ease-out 2.8s forwards}
+#e.go .p2{animation:cin .3s ease-out 4.8s forwards}
+#e.go .p3{animation:cin .3s ease-out 5.8s forwards}
+#e.go .p4{animation:cin .3s ease-out 6.8s forwards}
+#e .rk,#e .bst{opacity:0}
+#e .bst{transform-origin:0 -110px}
+#e.go .r1 .rk{animation:e_rk 3s linear 3s infinite}
+#e.go .r1 .bst{animation:e_bs 3s linear 3s infinite}
+#e.go .r2 .rk{animation:e_rk 3s linear 4.2s infinite}
+#e.go .r2 .bst{animation:e_bs 3s linear 4.2s infinite}
+#e .t1,#e .t2,#e .t3,#e .bar{opacity:0}
+#e.go .t1{animation:win 2.8s linear .2s}
+#e.go .t2{animation:win 5s linear 3s}
+#e.go .t3{animation:cin .5s ease-out 8s forwards}
+#e.go .bar{animation:cin .8s ease-out 8.5s forwards}
+#e .w{animation:wv 5s linear infinite}
+@keyframes e_tl{from{transform:rotate(0)}to{transform:rotate(6deg) translateY(4px)}}
+@keyframes e_fol{to{transform:translateY(var(--dy))}}
+@keyframes e_cv{to{fill:#2b2f3a}}
+@keyframes e_dim{to{opacity:.45}}
+@keyframes e_low{from{transform:translateY(var(--dy))}to{transform:translateY(80px)}}
+@keyframes e_away{from{transform:translate(0,80px) scale(1)}to{transform:translate(-30px,120px) scale(1.25)}}
+@keyframes e_away2{from{transform:translate(0,80px) scale(1)}to{transform:translate(40px,120px) scale(1.25)}}
+@keyframes e_rk{0%{transform:translateY(0);opacity:1}65%{transform:translateY(-110px);opacity:1}70%,100%{transform:translateY(-110px);opacity:0}}
+@keyframes e_bs{0%,65%{opacity:0;transform:scale(.2)}70%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.5)}}
+/* T tenggelam */
+#t .sh{transform-origin:340px 280px;transform:rotate(6deg) translateY(4px)}
+#t .bw{transform-origin:262px 268px}
+#t .sw{transform-origin:180px 272px}
+#t.go .sh{animation:t_s6 4.5s ease-in-out forwards}
+#t.go .bw{animation:t_bwk 16s ease-in-out 4.5s forwards}
+#t.go .sw{animation:t_swk 20s ease-in-out 4.5s forwards}
+#t.go .lt{animation:t_wno 4s linear 1.5s forwards}
+#t .sp{opacity:0;transform-origin:418px 268px}
+#t.go .sp{animation:t_spr 4s ease-out 4.5s forwards}
+#t .deb{opacity:0}
+#t.go .deb{animation:t_cdb 2.5s ease-out 16.5s forwards}
+#t .bb{animation:bbk 3s ease-in-out infinite}
+#t .tw{animation:tw 4s ease-in-out infinite}
+#t .l1,#t .l2,#t .l3,#t .l4,#t .l5{opacity:0}
+#t.go .l1{animation:win 4.3s linear .2s}
+#t.go .l2{animation:win 12s linear 4.5s}
+#t.go .l3{animation:cin .6s ease-out 16.5s forwards}
+#t.go .l4{animation:cin .6s ease-out 19.5s forwards}
+#t.go .l5{animation:cin .6s ease-out 21.5s forwards}
+@keyframes t_s6{from{transform:rotate(6deg) translateY(4px)}to{transform:rotate(13deg) translateY(8px)}}
+@keyframes t_bwk{0%{transform:none;opacity:1}25%{transform:translate(40px,70px) rotate(22deg);opacity:1}70%{opacity:1}100%{transform:translate(90px,260px) rotate(60deg);opacity:0}}
+@keyframes t_swk{0%{transform:none;opacity:1}15%{transform:rotate(-8deg);opacity:1}35%{transform:rotate(32deg) translateY(10px);opacity:1}80%{opacity:1}100%{transform:translate(-10px,250px) rotate(85deg);opacity:0}}
+@keyframes t_wno{0%{opacity:1}20%{opacity:.2}35%{opacity:1}55%{opacity:.2}70%{opacity:1}100%{opacity:0}}
+@keyframes t_spr{0%{opacity:.35;transform:scaleX(.3)}100%{opacity:0;transform:scaleX(1.8)}}
+@keyframes t_cdb{to{opacity:.35}}
+/* TD tenggelam gelap */
+#td .sh{transform-origin:340px 280px;transform:rotate(6deg) translateY(4px)}
+#td .bw{transform-origin:262px 268px}
+#td .sw{transform-origin:180px 272px}
+#td.go .sh{animation:t_s6 4.5s ease-in-out forwards}
+#td.go .bw{animation:t_bwk 16s ease-in-out 4.5s forwards}
+#td.go .sw{animation:t_swk 20s ease-in-out 4.5s forwards}
+#td.go .lt{animation:t_wno 4s linear 1.5s forwards}
+#td .sp{opacity:0;transform-origin:418px 268px}
+#td.go .sp{animation:t_spr 4s ease-out 4.5s forwards}
+#td .deb{opacity:0}
+#td.go .deb{animation:t_cdb 2.5s ease-out 16.5s forwards}
+#td .bb{animation:bbk 3s ease-in-out infinite}
+#td .tw{animation:tw 4s ease-in-out infinite}
+#td .l1,#t .l2,#t .l3,#t .l4,#t .l5{opacity:0}
+#td.go .l1{animation:win 4.3s linear .2s}
+#td.go .l2{animation:win 12s linear 4.5s}
+#td.go .l3{animation:cin .6s ease-out 16.5s forwards}
+#td.go .l4{animation:cin .6s ease-out 19.5s forwards}
+#td.go .l5{animation:cin .6s ease-out 21.5s forwards}
+/* S setelah tenggelam */
+#s .rs{transform:translate(10px,268px) scale(.5)}
+#s.go .rs{animation:s_ra 7s ease-out forwards}
+#s.go .bt{animation:s_bm 4s ease-in-out 7s forwards}
+#s .bb{animation:bbk 3s ease-in-out infinite}
+#s .tw{animation:tw 4s ease-in-out infinite}
+#s .cf,#s .t1,#s .t2,#s .t3,#s .t4,#s .t5,#s .n1{opacity:0}
+#s.go .cf{animation:cin 1.5s ease-out 1s forwards}
+#s.go .t1{animation:win 3.8s linear .2s}
+#s.go .t2{animation:win 4.5s linear 4s}
+#s.go .t3{animation:win 3.5s linear 8.5s}
+#s.go .t4{animation:cin .6s ease-out 12s forwards}
+#s.go .t5{animation:cin .6s ease-out 5s forwards}
+#s.go .n1{animation:cin .8s ease-out 7s forwards}
+@keyframes s_ra{from{transform:translate(10px,268px) scale(.5)}to{transform:translate(250px,290px) scale(2.4)}}
+@keyframes s_bm{to{transform:translateX(-70px)}}
+/* B bangkai satu tahap */
+#b .bw{transform:translate(170px,332px) rotate(-3deg)}
+#b .sw{transform:translate(540px,336px) rotate(2deg)}
+#b.go .bw{animation:b_bf 8s ease-in forwards}
+#b.go .sw{animation:b_sf 8s ease-in forwards}
+#b .db{opacity:0}
+#b.go .db{animation:b_dbf 4s ease-in forwards}
+#b .pf{opacity:0;transform-box:fill-box;transform-origin:center}
+#b.go .pf1{animation:b_pf 2.5s ease-out 7.5s forwards}
+#b.go .pf2{animation:b_pf 2.5s ease-out 8.2s forwards}
+#b .sn{animation:sn 8s linear infinite;opacity:0}
+#b .jd{opacity:1}
+#b.go .jd{opacity:0;animation:cin 1.5s ease-out 7.5s forwards}
+@keyframes b_bf{0%{transform:translate(260px,80px) rotate(-50deg)}100%{transform:translate(170px,332px) rotate(-3deg)}}
+@keyframes b_sf{0%{transform:translate(430px,60px) rotate(70deg)}100%{transform:translate(540px,336px) rotate(2deg)}}
+@keyframes b_dbf{0%{opacity:.9;transform:translateY(0)}85%{opacity:.9}100%{opacity:.8;transform:translateY(262px)}}
+@keyframes b_pf{0%{opacity:.5;transform:scaleX(.4)}100%{opacity:0;transform:scaleX(1.8)}}
+/* D kapal selam berputar */
+#d .orb{animation:d_x 18s ease-in-out infinite}
+#d .dep{animation:d_z 18s ease-in-out infinite}
+#d .front{animation:d_fr 18s linear infinite}
+#d .back{animation:d_bk 18s linear infinite}
+#d .lc{animation:d_fk 1.6s ease-in-out infinite}
+#d .sn{animation:sn 8s linear infinite;opacity:0}
+@keyframes d_x{0%{transform:translateX(-118px)}50%{transform:translateX(118px)}100%{transform:translateX(-118px)}}
+@keyframes d_z{0%{transform:translateY(0) scale(1)}25%{transform:translateY(24px) scale(1.18)}50%{transform:translateY(0) scale(1)}75%{transform:translateY(-20px) scale(.82)}100%{transform:translateY(0) scale(1)}}
+@keyframes d_fr{0%,49.9%{opacity:1}50%,100%{opacity:0}}
+@keyframes d_bk{0%,49.9%{opacity:0}50%,100%{opacity:1}}
+@keyframes d_fk{0%,100%{opacity:.9}50%{opacity:.65}}
+@media(prefers-reduced-motion:reduce){
+.cz .bob,.cz .bob2,.cz .w,.cz .sm,.cz .tw,.cz .fo,.cz .rf,.cz .ss,.cz .cl,.cz .gu,.cz .fl,.cz .dj,.vz .bb,.vz .tw,.vz .w,.vz .sn,.vz .spk,.vz .up,.vz .lc,.vz .hov,#k .bob,#e .rk,#e .bst,#d .orb,#d .dep,#d .front,#d .back{animation:none!important}
+#d .back{opacity:0}
+.vz *{animation-duration:.01s!important;animation-delay:0s!important}
+#e .rk,#e .bst{opacity:0!important}
+.cz .sm,.cz .ss,.cz .dj{opacity:0!important}
+}
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="lbD"><rect x="-11" y="-11" width="3.4" height="7" rx="1.2" fill="#4a5262"/><circle cx="-9.3" cy="-12.6" r="1.7" fill="#6a5a4a"/><rect x="-6" y="-11" width="3.4" height="7" rx="1.2" fill="#3e4656"/><circle cx="-4.3" cy="-12.6" r="1.7" fill="#6a5a4a"/><rect x="-1" y="-11" width="3.4" height="7" rx="1.2" fill="#4a5262"/><circle cx="0.7" cy="-12.6" r="1.7" fill="#6a5a4a"/><rect x="4" y="-11" width="3.4" height="7" rx="1.2" fill="#3e4656"/><circle cx="5.7" cy="-12.6" r="1.7" fill="#6a5a4a"/><rect x="9" y="-11" width="3.4" height="7" rx="1.2" fill="#4a5262"/><circle cx="10.7" cy="-12.6" r="1.7" fill="#6a5a4a"/><path d="M-18 -9 Q-12 1 -4 1 L4 1 Q12 1 18 -9 Q0 -3 -18 -9 Z" fill="#3a2e20"/><path d="M-18 -9 Q0 -3 18 -9" fill="none" stroke="#7a6a4a" stroke-width="1.3"/><line x1="-3" y1="-5" x2="-10" y2="4" stroke="#5a4a34" stroke-width="0.9"/><line x1="5" y1="-5" x2="12" y2="4" stroke="#5a4a34" stroke-width="0.9"/><line x1="-16" y1="-9" x2="-16" y2="-17" stroke="#6a5a40" stroke-width="0.9"/><circle cx="-16" cy="-18" r="8" fill="#f5c76a" opacity="0.14"/><circle cx="-16" cy="-18" r="4" fill="#f5c76a" opacity="0.3"/><circle cx="-16" cy="-18" r="1.8" fill="#ffe9a8"/><ellipse cx="-16" cy="5" rx="6" ry="1.2" fill="#f5c76a" opacity="0.3"/></g><g id="spC"><ellipse cx="0" cy="-22" rx="104" ry="30" fill="#f5c76a" opacity="0.1"/><ellipse cx="0" cy="-22" rx="70" ry="20" fill="#f5c76a" opacity="0.1"/><line x1="-66" y1="-14" x2="-66" y2="-48" stroke="#4a5568" stroke-width="1.3"/><line x1="-34" y1="-14" x2="-34" y2="-46" stroke="#4a5568" stroke-width="1.3"/><line x1="30" y1="-14" x2="30" y2="-48" stroke="#4a5568" stroke-width="1.3"/><line x1="64" y1="-14" x2="64" y2="-46" stroke="#4a5568" stroke-width="1.3"/><rect x="-38" y="-26" width="68" height="12" fill="#222a3a" stroke="#4a5568" stroke-width="0.6"/><rect x="-38" y="-26" width="68" height="12" fill="#f0cf80" opacity="0.55"/><rect x="-8" y="-44" width="16" height="30" fill="#a63a30"/><rect x="-8" y="-44" width="16" height="6" fill="#0a0c10"/><rect x="-8" y="-34" width="16" height="1.5" fill="#0a0c10"/><rect x="-8" y="-29" width="16" height="1.5" fill="#0a0c10"/><rect x="-8" y="-24" width="16" height="1.5" fill="#0a0c10"/><rect x="-8" y="-24" width="16" height="10" fill="#f5c76a" opacity="0.25"/><path d="M-84 0 L80 0 L90 -14 L-86 -14 Z" fill="#10141d" stroke="#4a5568" stroke-width="0.8"/><line x1="-84" y1="-14" x2="90" y2="-14" stroke="#f0cf80" stroke-width="1.2" opacity="0.7"/><line x1="-34" y1="-20" x2="26" y2="-20" stroke="#fff0b8" stroke-width="3.4" stroke-dasharray="3 4"/><line x1="-76" y1="-7" x2="78" y2="-7" stroke="#ffe39a" stroke-width="2.6" stroke-dasharray="2 5"/><circle cx="-66" cy="-49" r="2.2" fill="#ffffff"/><circle cx="64" cy="-47" r="2.2" fill="#ffffff"/><line x1="-70" y1="5" x2="70" y2="5" stroke="#f5c76a" stroke-width="1.6" stroke-dasharray="5 7" opacity="0.4"/><line x1="-56" y1="10" x2="56" y2="10" stroke="#f5c76a" stroke-width="1.4" stroke-dasharray="4 9" opacity="0.28"/></g></defs></svg>
+
+<section class="hero" aria-label="Ilustrasi kapal Titanic berlayar">
+<div class="hero-map"><svg class="vz cz" viewBox="0 0 680 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kapal Titanic berlayar tenang tampak dari depan. Mode gelap menampilkan langit malam berbintang, mode terang menampilkan pagi dengan burung camar dan lumba-lumba."><g class="sn2"><rect width="680" height="400" fill="#0b1a33"/><rect y="150" width="680" height="120" fill="#12294a" opacity="0.55"/><circle cx="60" cy="40" r="1.5" fill="#cfe0ff"/><circle cx="130" cy="70" r="1" fill="#cfe0ff" class="tw"/><circle cx="200" cy="30" r="1.5" fill="#cfe0ff"/><circle cx="270" cy="62" r="1" fill="#cfe0ff"/><circle cx="410" cy="75" r="1" fill="#cfe0ff" class="tw"/><circle cx="470" cy="38" r="1.5" fill="#cfe0ff"/><circle cx="540" cy="66" r="1" fill="#cfe0ff"/><circle cx="600" cy="32" r="1.5" fill="#cfe0ff" class="tw"/><circle cx="640" cy="80" r="1" fill="#cfe0ff"/><circle cx="95" cy="110" r="1" fill="#cfe0ff"/><circle cx="520" cy="105" r="1" fill="#cfe0ff" class="tw"/><circle cx="30" cy="85" r="1" fill="#cfe0ff"/><circle cx="450" cy="20" r="1" fill="#cfe0ff"/><circle cx="330" cy="30" r="1" fill="#cfe0ff"/><line class="ss" x1="560" y1="40" x2="580" y2="32" stroke="#ffffff" stroke-width="1.5"/><path d="M0 270 Q85 266 170 270 T340 270 T510 270 T680 270 L680 400 L0 400 Z" fill="#0a2340"/><g class="w"><path d="M-170 300 Q-85 296 0 300 T170 300 T340 300 T510 300 T680 300 T850 300" fill="none" stroke="#1d3d66" stroke-width="1"/><path d="M-170 335 Q-85 331 0 335 T170 335 T340 335 T510 335 T680 335 T850 335" fill="none" stroke="#1d3d66" stroke-width="1"/><path d="M-170 370 Q-85 366 0 370 T170 370 T340 370 T510 370 T680 370 T850 370" fill="none" stroke="#1d3d66" stroke-width="1"/></g><g class="rf"><line x1="300" y1="326" x2="380" y2="326" stroke="#f5c76a" stroke-width="2" stroke-dasharray="5 9" opacity="0.3"/><line x1="310" y1="342" x2="370" y2="342" stroke="#f5c76a" stroke-width="2" stroke-dasharray="4 12" opacity="0.2"/><line x1="320" y1="358" x2="360" y2="358" stroke="#f5c76a" stroke-width="2" stroke-dasharray="3 14" opacity="0.13"/></g><g class="bob"><ellipse class="sm" cx="340" cy="52" rx="34" ry="8" fill="#8a93a6" opacity="0.3"/><ellipse class="sm" style="animation-delay:3s" cx="352" cy="40" rx="26" ry="6" fill="#8a93a6" opacity="0.2"/><rect x="310" y="68" width="60" height="74" fill="#d9a441"/><rect x="310" y="68" width="60" height="14" fill="#17181d"/><rect x="215" y="164" width="250" height="42" fill="#f0f1f4"/><rect x="290" y="140" width="100" height="26" fill="#e4e6ea"/><line x1="298" y1="152" x2="382" y2="152" stroke="#f5c76a" stroke-width="5" stroke-dasharray="6 5"/><line x1="226" y1="186" x2="454" y2="186" stroke="#f5c76a" stroke-width="5" stroke-dasharray="5 7"/><rect x="226" y="160" width="228" height="6" fill="#e4e6ea"/><circle cx="230" cy="163" r="4" fill="#2ecc71"/><circle cx="450" cy="163" r="4" fill="#e53935"/><path d="M243 212 L437 212 L407 300 Q340 312 273 300 Z" fill="#17181d"/><path d="M276 288 L404 288 L407 300 Q340 312 273 300 Z" fill="#8b1c1c"/><rect x="252" y="204" width="176" height="10" fill="#e4e6ea"/><line x1="264" y1="226" x2="416" y2="226" stroke="#f5c76a" stroke-width="3" stroke-dasharray="3 9" opacity="1"/><circle cx="318" cy="254" r="4" fill="#3a3f4a"/><circle cx="362" cy="254" r="4" fill="#3a3f4a"/><line x1="340" y1="212" x2="340" y2="300" stroke="#2a2d36" stroke-width="2"/><rect x="338" y="88" width="4" height="118" fill="#3a3f4a"/><rect x="333" y="112" width="14" height="7" fill="#3a3f4a"/><line x1="340" y1="90" x2="256" y2="206" stroke="#6b7385" stroke-width="0.6"/><line x1="340" y1="90" x2="424" y2="206" stroke="#6b7385" stroke-width="0.6"/></g><g class="bob2"><g class="fo"><path d="M262 304 Q300 292 340 306 Q380 292 418 304 Q400 316 340 318 Q280 316 262 304 Z" fill="#dfe9f5" opacity="0.85"/><ellipse cx="270" cy="312" rx="22" ry="5" fill="#dfe9f5" opacity="0.5"/><ellipse cx="410" cy="312" rx="22" ry="5" fill="#dfe9f5" opacity="0.5"/></g></g></g><g class="sd"><rect width="680" height="170" fill="#6fa8d6"/><rect y="170" width="680" height="100" fill="#94c3e6"/><circle cx="580" cy="70" r="22" fill="#fff3c4"/><g class="cl"><g transform="translate(0,60)"><ellipse cx="0" cy="0" rx="40" ry="12" fill="#ffffff" opacity="0.8"/><ellipse cx="25" cy="-8" rx="28" ry="11" fill="#ffffff" opacity="0.8"/><ellipse cx="-24" cy="-4" rx="24" ry="9" fill="#ffffff" opacity="0.8"/></g></g><g class="cl" style="animation-delay:-35s;animation-duration:90s"><g transform="translate(0,120)"><ellipse cx="0" cy="0" rx="34" ry="10" fill="#ffffff" opacity="0.65"/><ellipse cx="20" cy="-7" rx="22" ry="9" fill="#ffffff" opacity="0.65"/></g></g><rect y="270" width="680" height="130" fill="#2d78a8"/><rect y="270" width="680" height="22" fill="#4a93c0" opacity="0.6"/><g class="w"><path d="M-170 300 Q-85 296 0 300 T170 300 T340 300 T510 300 T680 300 T850 300" fill="none" stroke="#6fb0d6" stroke-width="1.2"/><path d="M-170 335 Q-85 331 0 335 T170 335 T340 335 T510 335 T680 335 T850 335" fill="none" stroke="#6fb0d6" stroke-width="1.2"/><path d="M-170 370 Q-85 366 0 370 T170 370 T340 370 T510 370 T680 370 T850 370" fill="none" stroke="#6fb0d6" stroke-width="1.2"/></g><g class="gu" style="animation-delay:-4s;animation-duration:22s"><g transform="translate(0,80)"><path class="fl" d="M0 0 Q8 -9 16 0 Q24 -9 32 0" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/></g></g><g class="gu" style="animation-delay:-11s;animation-duration:17s"><g transform="translate(0,112)"><path class="fl" d="M0 0 Q8 -9 16 0 Q24 -9 32 0" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/></g></g><g class="gu" style="animation-delay:-18s;animation-duration:26s"><g transform="translate(0,52)"><path class="fl" d="M0 0 Q8 -9 16 0 Q24 -9 32 0" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/></g></g><g class="bob"><ellipse class="sm" cx="340" cy="52" rx="34" ry="8" fill="#8a93a6" opacity="0.3"/><ellipse class="sm" style="animation-delay:3s" cx="352" cy="40" rx="26" ry="6" fill="#8a93a6" opacity="0.2"/><rect x="310" y="68" width="60" height="74" fill="#d9a441"/><rect x="310" y="68" width="60" height="14" fill="#17181d"/><rect x="215" y="164" width="250" height="42" fill="#f6f1e6" stroke="#41546e" stroke-width="1.3"/><rect x="290" y="140" width="100" height="26" fill="#e6dfd0" stroke="#41546e" stroke-width="1.3"/><line x1="298" y1="152" x2="382" y2="152" stroke="#2f4a6b" stroke-width="5" stroke-dasharray="6 5"/><line x1="226" y1="186" x2="454" y2="186" stroke="#2f4a6b" stroke-width="5" stroke-dasharray="5 7"/><rect x="226" y="160" width="228" height="6" fill="#e6dfd0" stroke="#41546e" stroke-width="1.3"/><circle cx="230" cy="163" r="4" fill="#2ecc71"/><circle cx="450" cy="163" r="4" fill="#e53935"/><path d="M243 212 L437 212 L407 300 Q340 312 273 300 Z" fill="#17181d"/><path d="M276 288 L404 288 L407 300 Q340 312 273 300 Z" fill="#8b1c1c"/><rect x="252" y="204" width="176" height="10" fill="#e6dfd0" stroke="#41546e" stroke-width="1.3"/><line x1="264" y1="226" x2="416" y2="226" stroke="#f5c76a" stroke-width="3" stroke-dasharray="3 9" opacity="0.6"/><circle cx="318" cy="254" r="4" fill="#3a3f4a"/><circle cx="362" cy="254" r="4" fill="#3a3f4a"/><line x1="340" y1="212" x2="340" y2="300" stroke="#2a2d36" stroke-width="2"/><rect x="338" y="88" width="4" height="118" fill="#3a3f4a"/><rect x="333" y="112" width="14" height="7" fill="#3a3f4a"/><line x1="340" y1="90" x2="256" y2="206" stroke="#6b7385" stroke-width="0.6"/><line x1="340" y1="90" x2="424" y2="206" stroke="#6b7385" stroke-width="0.6"/></g><g class="bob2"><g class="fo"><path d="M262 304 Q300 292 340 306 Q380 292 418 304 Q400 316 340 318 Q280 316 262 304 Z" fill="#dfe9f5" opacity="0.85"/><ellipse cx="270" cy="312" rx="22" ry="5" fill="#dfe9f5" opacity="0.5"/><ellipse cx="410" cy="312" rx="22" ry="5" fill="#dfe9f5" opacity="0.5"/></g></g><g transform="translate(170,318)"><g class="dj" style="animation-delay:0s"><ellipse cx="0" cy="0" rx="22" ry="8" fill="#4b5d73"/><ellipse cx="24" cy="1" rx="7" ry="3" fill="#4b5d73"/><ellipse cx="2" cy="3" rx="16" ry="4" fill="#dfe7ee"/><polygon points="-4,-7 6,-7 -2,-18" fill="#4b5d73"/><polygon points="-22,0 -34,-9 -32,0 -34,9" fill="#4b5d73"/></g></g><g transform="translate(520,326) scale(-1,1)"><g class="dj" style="animation-delay:-4.5s"><ellipse cx="0" cy="0" rx="22" ry="8" fill="#4b5d73"/><ellipse cx="24" cy="1" rx="7" ry="3" fill="#4b5d73"/><ellipse cx="2" cy="3" rx="16" ry="4" fill="#dfe7ee"/><polygon points="-4,-7 6,-7 -2,-18" fill="#4b5d73"/><polygon points="-22,0 -34,-9 -32,0 -34,9" fill="#4b5d73"/></g></g></g></svg></div>
+<div class="hero-content">
+<div class="hero-eyebrow">Sejarah &amp; Maritim</div>
+<h1 class="hero-title">Kisah Tenggelamnya <span>Kapal Titanic</span></h1>
+<p class="hero-subtitle">Kapal yang &quot;Tidak Dapat Tenggelam&quot; dan Akhirnya Tenggelam</p>
+<div class="hero-meta">
+<span class="hero-tag">Sejarah</span>
+<span class="hero-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg> Oktober 2026</span>
+<span class="hero-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg> KBDI &middot; Sejarah</span>
+</div>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<section class="sec reveal">
+<p class="lead">Pada 10 April 1912, RMS Titanic berlayar dari Southampton menuju New York dalam pelayaran perdananya. Empat hari kemudian, dini hari 15 April, kapal itu sudah berada di dasar Atlantik Utara bersama sekitar 1.500 jiwa.</p>
+<p>Kisahnya begitu sering diceritakan sampai sulit membedakan mana yang tercatat dan mana yang ditambahkan film dan legenda. Judulnya sendiri sudah memuat salah satu mitos terbesarnya. Artikel ini mengikuti Titanic dari galangan sampai dasar laut, lalu meluruskan mitos yang paling sering beredar, berdasarkan laporan dua penyelidikan 1912 di Amerika Serikat dan Inggris, serta sumber yang bisa dicek.</p>
+</section>
+
+<section class="sec reveal" id="kapal">
+<div class="kicker">Bagian 1</div>
+<h2>Seputar Kapal Titanic</h2>
+<p>RMS Titanic adalah kapal penumpang mewah milik White Star Line yang dibangun galangan Harland and Wolff di Belfast. Titanic merupakan kapal kedua dari tiga kapal kelas Olympic, bersama Olympic dan Britannic, yang dibuat untuk menyaingi perusahaan pembuat kapal pesiar Cunard, yang baru meluncurkan kapal Lusitania dan Mauretania, kapal penumpang tercepat saat itu. Titanic diluncurkan pada 31 Mei 1911 dan menjadi kapal terbesar di dunia saat mulai beroperasi. Arsiteknya, Thomas Andrews, ikut tewas dalam pelayaran itu.</p>
+<div class="stats">
+<div class="stat"><b>269 m</b><span>panjang kapal</span></div>
+<div class="stat"><b>28 m</b><span>lebar kapal</span></div>
+<div class="stat"><b>46.328</b><span>ton register kotor</span></div>
+<div class="stat"><b>16</b><span>kompartemen kedap air</span></div>
+<div class="stat"><b>20</b><span>sekoci, kapasitas sekitar 1.178 orang</span></div>
+<div class="stat"><b>3.327</b><span>kapasitas penumpang dan awak (2.435 + 892)</span></div>
+</div>
+<p>Dari dasar kapal sampai ujung cerobong, tinggi Titanic sekitar 53 meter. Dasar kapal yang dimaksud adalah keel, balok utama di bagian paling bawah lambung yang membentang dari haluan ke buritan, semacam tulang punggung tempat rangka lambung dipasang. Titanic punya empat cerobong, tetapi hanya tiga yang menyalurkan asap mesin. Cerobong keempat tidak terhubung ke mesin. Cerobong ini dipakai sebagai ventilasi untuk dapur, ruang merokok kelas 1, dan ruang mesin turbin, sekaligus membuat siluet kapal tampak lebih besar dan seimbang.</p>
+<figure class="ill"><div class="frame"><svg class="vz" viewBox="40 40 600 360" role="img" aria-labelledby="a-t"><title id="a-t">Bagian-bagian Titanic: empat cerobong, dasar kapal, dan tinggi kapal</title><rect width="680" height="400" fill="#0b1a33"/><rect y="150" width="680" height="118" fill="#12294a" opacity="0.55"/><circle cx="90" cy="75" r="1.5" fill="#cfe0ff"/><circle cx="330" cy="68" r="1" fill="#cfe0ff"/><circle cx="480" cy="80" r="1.5" fill="#cfe0ff"/><circle cx="600" cy="72" r="1" fill="#cfe0ff"/><circle cx="560" cy="140" r="1" fill="#cfe0ff"/><circle cx="60" cy="130" r="1" fill="#cfe0ff"/><circle cx="410" cy="100" r="1" fill="#cfe0ff"/><rect y="268" width="680" height="132" fill="#0a2340"/><g transform="translate(680,0) scale(-1,1)"><path d="M90 232 L560 232 L612 222 L588 292 L122 292 Q96 286 90 232 Z" fill="#17181d"/><path d="M108 270 L593 270 L588 292 L122 292 Q112 290 108 270 Z" fill="#8b1c1c"/><rect x="205" y="190" width="290" height="16" fill="#e4e6ea"/><rect x="158" y="206" width="384" height="26" fill="#f0f1f4"/><rect x="232" y="118" width="28" height="74" fill="#d9a441"/><rect x="232" y="118" width="28" height="12" fill="#17181d"/><rect x="292" y="118" width="28" height="74" fill="#d9a441"/><rect x="292" y="118" width="28" height="12" fill="#17181d"/><rect x="352" y="118" width="28" height="74" fill="#d9a441"/><rect x="352" y="118" width="28" height="12" fill="#17181d"/><rect x="412" y="118" width="28" height="74" fill="#d9a441"/><rect x="412" y="118" width="28" height="12" fill="#17181d"/><rect x="548" y="128" width="3" height="104" fill="#3a3f4a"/><rect x="130" y="148" width="3" height="84" fill="#3a3f4a"/><line x1="550" y1="130" x2="612" y2="222" stroke="#6b7385" stroke-width="0.6"/><line x1="550" y1="130" x2="490" y2="190" stroke="#6b7385" stroke-width="0.6"/><line x1="132" y1="150" x2="95" y2="232" stroke="#6b7385" stroke-width="0.6"/><line x1="132" y1="150" x2="200" y2="190" stroke="#6b7385" stroke-width="0.6"/><line x1="170" y1="198" x2="486" y2="198" stroke="#f5c76a" stroke-width="4" stroke-dasharray="4 8"/><line x1="170" y1="220" x2="530" y2="220" stroke="#f5c76a" stroke-width="5" stroke-dasharray="5 7"/><line class="ph" x1="125" y1="246" x2="572" y2="246" stroke="#f5c76a" stroke-width="3" stroke-dasharray="3 9"/></g><rect y="268" width="680" height="132" fill="#0a2340" opacity="0.3"/><path d="M0 268 Q85 265 170 268 T340 268 T510 268 T680 268" fill="none" stroke="#bcd3ee" stroke-width="1" opacity="0.5"/><g class="w"><path d="M-170 310 Q-85 306 0 310 T170 310 T340 310 T510 310 T680 310 T850 310" fill="none" stroke="#1d3d66" stroke-width="1"/><path d="M-170 350 Q-85 346 0 350 T170 350 T340 350 T510 350 T680 350 T850 350" fill="none" stroke="#1d3d66" stroke-width="1"/></g><path d="M240 114 V108 H388 V114" stroke="#cfe0ff" stroke-width="1.3" fill="none"/><line x1="314" y1="108" x2="314" y2="100" stroke="#cfe0ff" stroke-width="1.3" fill="none"/><text x="314" y="78" class="z3" text-anchor="middle">Cerobong 1 sampai 3</text><text x="314" y="96" class="z2" text-anchor="middle">asap mesin</text><path d="M420 114 V108 H448 V114" stroke="#f5c76a" stroke-width="1.3" fill="none"/><line x1="448" y1="108" x2="470" y2="92" stroke="#f5c76a" stroke-width="1.3"/><text x="476" y="88" class="z3 zy">Cerobong ke-4</text><text x="476" y="106" class="z2">ventilasi saja</text><line x1="340" y1="292" x2="340" y2="332" stroke="#cfe0ff" stroke-width="1.3" fill="none"/><circle cx="340" cy="292" r="3" fill="#cfe0ff"/><text x="340" y="354" class="z3" text-anchor="middle">Dasar kapal (keel)</text><text x="340" y="374" class="z2" text-anchor="middle">balok paling bawah, tulang punggung lambung</text><line x1="466" y1="118" x2="626" y2="118" stroke="#9fb4d6" stroke-width="1" stroke-dasharray="3 4"/><line x1="592" y1="292" x2="626" y2="292" stroke="#9fb4d6" stroke-width="1" stroke-dasharray="3 4"/><path d="M622 118 V292 M617 124 L622 118 L627 124 M617 286 L622 292 L627 286" stroke="#cfe0ff" stroke-width="1.3" fill="none"/><text x="608" y="205" class="z3" text-anchor="middle" transform="rotate(-90 608 205)">sekitar 53 m</text></svg></div>
+<div class="figbar"><figcaption>Posisi cerobong dan dasar kapal (keel) pada Titanic. Gambar tidak persis sesuai skala.</figcaption></div></figure>
+<p>Kapal ini bisa memuat 2.435 penumpang dan 892 awak (sebagian sumber menyebut total 3.547), sedangkan pada malam tenggelamnya ada sekitar 2.200 orang di kapal.</p>
+<p>Soal keselamatan, lambungnya dibagi 16 kompartemen kedap air dengan pintu otomatis. Majalah industri The Shipbuilder menyebut kapal kelas ini &quot;practically unsinkable&quot; pada Juni 1911. Namun kapal hanya membawa 20 sekoci berkapasitas sekitar 1.178 orang, kurang dari sepertiga kapasitas totalnya.</p>
+</section>
+
+<section class="sec" id="perjalanan">
+<div class="kicker reveal">Bagian 2</div>
+<h2 class="reveal">Urutan Perjalanan sampai Tenggelam</h2>
+
+<div class="step reveal">
+<div class="num">1</div>
+<div class="time">10 SAMPAI 14 APRIL 1912</div>
+<h3>Berlayar dan peringatan es</h3>
+<p>Setelah berangkat dari Southampton pada 10 April, Titanic singgah di Cherbourg dan Queenstown, lalu menyeberangi Atlantik. Kecepatannya terus naik seiring mesin tambahan dinyalakan, dan pada Minggu 14 April kapal melaju sekitar 21,5 knot. Sepanjang hari itu operator radio menerima enam pesan peringatan es dari kapal lain. Kapten Smith menerima dua di antaranya dan mengubah haluan sedikit ke selatan, tetapi dua pesan lain, termasuk peringatan Mesaba yang menyebut es tepat di jalur kapal, tidak pernah sampai ke anjungan. Kecepatan tidak dikurangi.</p>
+<figure class="ill"><div class="frame"><svg class="vz cz" viewBox="0 0 680 400" role="img" aria-label="Titanic berlayar tenang di malam hari"><rect width="680" height="400" fill="#0b1a33"/><rect y="150" width="680" height="120" fill="#12294a" opacity="0.55"/><circle cx="60" cy="40" r="1.5" fill="#cfe0ff"/><circle cx="130" cy="70" r="1" fill="#cfe0ff" class="tw"/><circle cx="200" cy="30" r="1.5" fill="#cfe0ff"/><circle cx="270" cy="62" r="1" fill="#cfe0ff"/><circle cx="410" cy="75" r="1" fill="#cfe0ff" class="tw"/><circle cx="470" cy="38" r="1.5" fill="#cfe0ff"/><circle cx="540" cy="66" r="1" fill="#cfe0ff"/><circle cx="600" cy="32" r="1.5" fill="#cfe0ff" class="tw"/><circle cx="640" cy="80" r="1" fill="#cfe0ff"/><circle cx="95" cy="110" r="1" fill="#cfe0ff"/><circle cx="520" cy="105" r="1" fill="#cfe0ff" class="tw"/><circle cx="30" cy="85" r="1" fill="#cfe0ff"/><circle cx="450" cy="20" r="1" fill="#cfe0ff"/><circle cx="330" cy="30" r="1" fill="#cfe0ff"/><line class="ss" x1="560" y1="40" x2="580" y2="32" stroke="#ffffff" stroke-width="1.5"/><path d="M0 270 Q85 266 170 270 T340 270 T510 270 T680 270 L680 400 L0 400 Z" fill="#0a2340"/><g class="w"><path d="M-170 300 Q-85 296 0 300 T170 300 T340 300 T510 300 T680 300 T850 300" fill="none" stroke="#1d3d66" stroke-width="1"/><path d="M-170 335 Q-85 331 0 335 T170 335 T340 335 T510 335 T680 335 T850 335" fill="none" stroke="#1d3d66" stroke-width="1"/><path d="M-170 370 Q-85 366 0 370 T170 370 T340 370 T510 370 T680 370 T850 370" fill="none" stroke="#1d3d66" stroke-width="1"/></g><g class="rf"><line x1="300" y1="326" x2="380" y2="326" stroke="#f5c76a" stroke-width="2" stroke-dasharray="5 9" opacity="0.3"/><line x1="310" y1="342" x2="370" y2="342" stroke="#f5c76a" stroke-width="2" stroke-dasharray="4 12" opacity="0.2"/><line x1="320" y1="358" x2="360" y2="358" stroke="#f5c76a" stroke-width="2" stroke-dasharray="3 14" opacity="0.13"/></g><g class="bob"><ellipse class="sm" cx="340" cy="52" rx="34" ry="8" fill="#8a93a6" opacity="0.3"/><ellipse class="sm" style="animation-delay:3s" cx="352" cy="40" rx="26" ry="6" fill="#8a93a6" opacity="0.2"/><rect x="310" y="68" width="60" height="74" fill="#d9a441"/><rect x="310" y="68" width="60" height="14" fill="#17181d"/><rect x="215" y="164" width="250" height="42" fill="#f0f1f4"/><rect x="290" y="140" width="100" height="26" fill="#e4e6ea"/><line x1="298" y1="152" x2="382" y2="152" stroke="#f5c76a" stroke-width="5" stroke-dasharray="6 5"/><line x1="226" y1="186" x2="454" y2="186" stroke="#f5c76a" stroke-width="5" stroke-dasharray="5 7"/><rect x="226" y="160" width="228" height="6" fill="#e4e6ea"/><circle cx="230" cy="163" r="4" fill="#2ecc71"/><circle cx="450" cy="163" r="4" fill="#e53935"/><path d="M243 212 L437 212 L407 300 Q340 312 273 300 Z" fill="#17181d"/><path d="M276 288 L404 288 L407 300 Q340 312 273 300 Z" fill="#8b1c1c"/><rect x="252" y="204" width="176" height="10" fill="#e4e6ea"/><line x1="264" y1="226" x2="416" y2="226" stroke="#f5c76a" stroke-width="3" stroke-dasharray="3 9" opacity="1"/><circle cx="318" cy="254" r="4" fill="#3a3f4a"/><circle cx="362" cy="254" r="4" fill="#3a3f4a"/><line x1="340" y1="212" x2="340" y2="300" stroke="#2a2d36" stroke-width="2"/><rect x="338" y="88" width="4" height="118" fill="#3a3f4a"/><rect x="333" y="112" width="14" height="7" fill="#3a3f4a"/><line x1="340" y1="90" x2="256" y2="206" stroke="#6b7385" stroke-width="0.6"/><line x1="340" y1="90" x2="424" y2="206" stroke="#6b7385" stroke-width="0.6"/></g><g class="bob2"><g class="fo"><path d="M262 304 Q300 292 340 306 Q380 292 418 304 Q400 316 340 318 Q280 316 262 304 Z" fill="#dfe9f5" opacity="0.85"/><ellipse cx="270" cy="312" rx="22" ry="5" fill="#dfe9f5" opacity="0.5"/><ellipse cx="410" cy="312" rx="22" ry="5" fill="#dfe9f5" opacity="0.5"/></g></g><text x="56" y="366" class="z1">14 April 1912</text><text x="56" y="388" class="z2">sekitar 21,5 knot, laut tenang</text></svg></div>
+<div class="figbar"><figcaption>Malam 14 April 1912, laut tenang dan jernih. Kapal melaju sekitar 21 sampai 22 knot di perairan yang sudah dilaporkan berisi es.</figcaption></div></figure>
+</div>
+
+<div class="step reveal">
+<div class="num">2</div>
+<div class="time">23.40</div>
+<h3>Menyerempet es dan kebocoran</h3>
+<p>Menurut saksi dalam penyelidikan 1912, malam itu langit berbintang dan tanpa bulan. Dua awak melihat massa hitam di depan, membunyikan lonceng, dan menelepon anjungan. Massa hitam itu ternyata gunung es. Kemudi diputar penuh dan mesin dimundurkan, tetapi usaha itu terlambat. Es menyerempet lambung kanan di bawah garis air dan membuka sambungan pelat. Lima dari 16 kompartemen kedap air bocor, satu lebih banyak dari batas aman.</p>
+<figure class="ill"><div class="frame"><svg id="k" class="vz" data-auto="1" viewBox="40 100 600 300" role="img" aria-labelledby="k-t"><title id="k-t">Kebocoran kapal Titanic</title><defs><clipPath id="hc_k"><path d="M90 232 L560 232 L612 222 L588 292 L122 292 Q96 286 90 232 Z"/></clipPath></defs><rect width="680" height="400" fill="#0b1a33"/><rect y="150" width="680" height="118" fill="#12294a" opacity="0.55"/><circle cx="90" cy="120" r="1.5" fill="#cfe0ff"/><circle cx="180" cy="110" r="1" fill="#cfe0ff"/><circle cx="480" cy="116" r="1.5" fill="#cfe0ff"/><circle cx="600" cy="108" r="1" fill="#cfe0ff"/><circle cx="560" cy="160" r="1" fill="#cfe0ff"/><circle cx="60" cy="170" r="1" fill="#cfe0ff"/><rect y="268" width="680" height="132" fill="#0a2340"/><g class="ice"><polygon points="-50,0 -38,-30 -22,-46 -8,-28 6,-58 28,-26 46,0" fill="#dfeaf7"/><polygon points="6,-58 28,-26 46,0 10,0" fill="#b9cde6"/><polygon points="-50,0 46,0 42,38 0,60 -46,36" fill="#7fa6d0" opacity="0.7"/></g><g transform="translate(680,0) scale(-1,1)"><g class="bob"><g class="sh"><path d="M90 232 L560 232 L612 222 L588 292 L122 292 Q96 286 90 232 Z" fill="#17181d"/><path d="M108 270 L593 270 L588 292 L122 292 Q112 290 108 270 Z" fill="#8b1c1c"/><g class="cut" clip-path="url(#hc_k)"><rect x="118" y="236" width="474" height="56" fill="#262b38"/><rect class="wt" x="443.6" y="250" width="29.6" height="42" fill="#2e6fa8" opacity="0.85" style="animation-delay:6.7s"/><rect class="wt" x="473.2" y="250" width="29.6" height="42" fill="#2e6fa8" opacity="0.85" style="animation-delay:5.9s"/><rect class="wt" x="502.8" y="250" width="29.6" height="42" fill="#2e6fa8" opacity="0.85" style="animation-delay:5.1s"/><rect class="wt" x="532.4" y="250" width="29.6" height="42" fill="#2e6fa8" opacity="0.85" style="animation-delay:4.3s"/><rect class="wt" x="562" y="250" width="29.6" height="42" fill="#2e6fa8" opacity="0.85" style="animation-delay:3.5s"/><path d="M147.6 236V292M177.2 236V292M206.8 236V292M236.4 236V292M266 236V292M295.6 236V292M325.2 236V292M354.8 236V292M384.4 236V292M414 236V292M443.6 236V292M473.2 236V292M502.8 236V292M532.4 236V292M562 236V292" stroke="#7d8699" stroke-width="1.5" fill="none"/><line class="up" x1="458.4" y1="292" x2="458.4" y2="262" stroke="#9fd3ff" stroke-width="2" stroke-dasharray="3 5" style="animation-delay:0s,6.7s"/><line class="up" x1="488" y1="292" x2="488" y2="262" stroke="#9fd3ff" stroke-width="2" stroke-dasharray="3 5" style="animation-delay:0s,5.9s"/><line class="up" x1="517.6" y1="292" x2="517.6" y2="262" stroke="#9fd3ff" stroke-width="2" stroke-dasharray="3 5" style="animation-delay:0s,5.1s"/><line class="up" x1="547.2" y1="292" x2="547.2" y2="262" stroke="#9fd3ff" stroke-width="2" stroke-dasharray="3 5" style="animation-delay:0s,4.3s"/><line class="up" x1="576.8" y1="292" x2="576.8" y2="262" stroke="#9fd3ff" stroke-width="2" stroke-dasharray="3 5" style="animation-delay:0s,3.5s"/></g><rect x="205" y="190" width="290" height="16" fill="#e4e6ea"/><rect x="158" y="206" width="384" height="26" fill="#f0f1f4"/><rect x="232" y="118" width="28" height="74" fill="#d9a441"/><rect x="232" y="118" width="28" height="12" fill="#17181d"/><rect x="292" y="118" width="28" height="74" fill="#d9a441"/><rect x="292" y="118" width="28" height="12" fill="#17181d"/><rect x="352" y="118" width="28" height="74" fill="#d9a441"/><rect x="352" y="118" width="28" height="12" fill="#17181d"/><rect x="412" y="118" width="28" height="74" fill="#d9a441"/><rect x="412" y="118" width="28" height="12" fill="#17181d"/><rect x="548" y="128" width="3" height="104" fill="#3a3f4a"/><rect x="130" y="148" width="3" height="84" fill="#3a3f4a"/><line x1="550" y1="130" x2="612" y2="222" stroke="#6b7385" stroke-width="0.6"/><line x1="550" y1="130" x2="490" y2="190" stroke="#6b7385" stroke-width="0.6"/><line x1="132" y1="150" x2="95" y2="232" stroke="#6b7385" stroke-width="0.6"/><line x1="132" y1="150" x2="200" y2="190" stroke="#6b7385" stroke-width="0.6"/><line x1="170" y1="198" x2="486" y2="198" stroke="#f5c76a" stroke-width="4" stroke-dasharray="4 8"/><line x1="170" y1="220" x2="530" y2="220" stroke="#f5c76a" stroke-width="5" stroke-dasharray="5 7"/><line class="ph" x1="125" y1="246" x2="572" y2="246" stroke="#f5c76a" stroke-width="3" stroke-dasharray="3 9"/><line class="gash" x1="430" y1="280" x2="585" y2="280" stroke="#ff6b5a" stroke-width="3" stroke-dasharray="8 5"/></g></g></g><g class="ice2"><ellipse cx="0" cy="0" rx="42" ry="5" fill="#e6f0fb" opacity="0.8"/><circle class="spk" cx="-14" cy="-6" r="2" fill="#ffffff"/><circle class="spk" style="animation-delay:.1s" cx="6" cy="-10" r="1.5" fill="#ffffff"/><circle class="spk" style="animation-delay:.15s" cx="22" cy="-5" r="1.5" fill="#ffffff"/></g><rect class="fs" y="268" width="680" height="132" fill="#0a2340"/><path d="M0 268 Q85 265 170 268 T340 268 T510 268 T680 268" fill="none" stroke="#bcd3ee" stroke-width="1" opacity="0.5"/><g class="w"><path d="M-170 300 Q-85 296 0 300 T170 300 T340 300 T510 300 T680 300 T850 300" fill="none" stroke="#1d3d66" stroke-width="1"/><path d="M-170 340 Q-85 336 0 340 T170 340 T340 340 T510 340 T680 340 T850 340" fill="none" stroke="#1d3d66" stroke-width="1"/></g><g><text x="630" y="124" class="c c0 z2" text-anchor="end">Kompartemen terisi</text><text x="630" y="146" class="c c0 z4" text-anchor="end">0 dari 16</text><text x="630" y="146" class="c c1 z4" text-anchor="end">1 dari 16</text><text x="630" y="146" class="c c2 z4" text-anchor="end">2 dari 16</text><text x="630" y="146" class="c c3 z4" text-anchor="end">3 dari 16</text><text x="630" y="146" class="c c4 z4" text-anchor="end">4 dari 16</text><text x="630" y="146" class="c c5 z4 zr" text-anchor="end">5 dari 16</text></g><text x="56" y="386" class="la z3">Es menyerempet lambung kanan</text><g class="lb"><text x="56" y="366" class="z3">Lima kompartemen terisi air</text><text x="56" y="388" class="z2">batas aman rancangan: empat kompartemen</text></g></svg></div>
+<div class="figbar"><figcaption>Es digambar di sisi jauh karena lambung kanan tidak menghadap penonton. Lima kompartemen haluan terisi air, satu lebih banyak dari batas aman rancangan, sehingga haluan mulai turun.</figcaption><button class="btn rp" type="button"><span aria-hidden="true">&#8635;</span> Tekan untuk ulangi</button></div></figure>
+</div>
+
+<div class="step reveal">
+<div class="num">3</div>
+<div class="time">00.05 SAMPAI 02.05</div>
+<h3>Evakuasi dan sekoci</h3>
+<p>Pukul 00.05 sekoci diperintahkan dibuka dan penumpang dibangunkan. Sekoci pertama baru turun sekitar pukul 00.45 dan tidak penuh, bersama kembang api darurat. Kapal membawa 20 sekoci berkapasitas sekitar 1.178 orang untuk sekitar 2.200 orang, dan banyak sekoci diturunkan tidak penuh. Sekoci terakhir turun sekitar pukul 02.05. Pesan radio terakhir dikirim pukul 02.17.</p>
+<figure class="ill"><div class="frame"><svg id="e" class="vz" data-auto="1" viewBox="40 60 600 340" role="img" aria-labelledby="e-t"><title id="e-t">Evakuasi dan menurunkan sekoci</title><rect width="680" height="400" fill="#0b1a33"/><rect y="150" width="680" height="118" fill="#12294a" opacity="0.55"/><circle cx="90" cy="75" r="1.5" fill="#cfe0ff"/><circle cx="330" cy="68" r="1" fill="#cfe0ff"/><circle cx="480" cy="80" r="1.5" fill="#cfe0ff"/><circle cx="600" cy="72" r="1" fill="#cfe0ff"/><circle cx="560" cy="140" r="1" fill="#cfe0ff"/><circle cx="60" cy="130" r="1" fill="#cfe0ff"/><circle cx="410" cy="100" r="1" fill="#cfe0ff"/><rect y="268" width="680" height="132" fill="#0a2340"/><g transform="translate(680,0) scale(-1,1)"><g class="sh"><path d="M90 232 L560 232 L612 222 L588 292 L122 292 Q96 286 90 232 Z" fill="#17181d"/><path d="M108 270 L593 270 L588 292 L122 292 Q112 290 108 270 Z" fill="#8b1c1c"/><rect x="205" y="190" width="290" height="16" fill="#e4e6ea"/><rect x="158" y="206" width="384" height="26" fill="#f0f1f4"/><rect x="232" y="118" width="28" height="74" fill="#d9a441"/><rect x="232" y="118" width="28" height="12" fill="#17181d"/><rect x="292" y="118" width="28" height="74" fill="#d9a441"/><rect x="292" y="118" width="28" height="12" fill="#17181d"/><rect x="352" y="118" width="28" height="74" fill="#d9a441"/><rect x="352" y="118" width="28" height="12" fill="#17181d"/><rect x="412" y="118" width="28" height="74" fill="#d9a441"/><rect x="412" y="118" width="28" height="12" fill="#17181d"/><rect x="548" y="128" width="3" height="104" fill="#3a3f4a"/><rect x="130" y="148" width="3" height="84" fill="#3a3f4a"/><line x1="550" y1="130" x2="612" y2="222" stroke="#6b7385" stroke-width="0.6"/><line x1="550" y1="130" x2="490" y2="190" stroke="#6b7385" stroke-width="0.6"/><line x1="132" y1="150" x2="95" y2="232" stroke="#6b7385" stroke-width="0.6"/><line x1="132" y1="150" x2="200" y2="190" stroke="#6b7385" stroke-width="0.6"/><line x1="170" y1="198" x2="486" y2="198" stroke="#f5c76a" stroke-width="4" stroke-dasharray="4 8"/><line x1="170" y1="220" x2="530" y2="220" stroke="#f5c76a" stroke-width="5" stroke-dasharray="5 7"/><line class="ph" x1="125" y1="246" x2="572" y2="246" stroke="#f5c76a" stroke-width="3" stroke-dasharray="3 9"/><g class="pd"><line x1="200" y1="184" x2="490" y2="184" stroke="#3a3f4a" stroke-width="5" stroke-linecap="round" stroke-dasharray="0.1 8"/></g></g></g><rect y="268" width="680" height="132" fill="#0a2340" opacity="0.88"/><path d="M0 268 Q85 265 170 268 T340 268 T510 268 T680 268" fill="none" stroke="#bcd3ee" stroke-width="1" opacity="0.5"/><g class="w"><path d="M-170 300 Q-85 296 0 300 T170 300 T340 300 T510 300 T680 300 T850 300" fill="none" stroke="#1d3d66" stroke-width="1"/><path d="M-170 340 Q-85 336 0 340 T170 340 T340 340 T510 340 T680 340 T850 340" fill="none" stroke="#1d3d66" stroke-width="1"/></g><g transform="translate(345,186)"><g transform="scale(1.3)"><use href="#lbD"/></g></g><g transform="translate(285,186)"><g class="b1" style="--dy:1.7px"><g transform="scale(1.3)"><use href="#lbD"/></g></g></g><g transform="translate(405,186)"><g class="b2" style="--dy:-3.4px"><g transform="scale(1.3)"><use href="#lbD"/></g></g></g><g transform="translate(205,186)"><g class="b3" style="--dy:8.5px"><g transform="scale(1.3)"><use href="#lbD"/></g></g></g><g transform="translate(470,186)"><g class="b4" style="--dy:-9.5px"><g transform="scale(1.3)"><use href="#lbD"/></g></g></g><g class="r1" transform="translate(180,200)"><g class="rk"><rect x="-1.5" y="0" width="3" height="16" fill="#ffffff"/><line x1="0" y1="16" x2="0" y2="52" stroke="#f5c76a" stroke-width="3" opacity="0.7"/></g><g class="bst"><path d="M-16 -110 L16 -110 M0 -126 L0 -94 M-11 -121 L11 -99 M11 -121 L-11 -99" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="0" cy="-110" r="4" fill="#f5c76a"/></g></g><g class="r2" transform="translate(235,200)"><g class="rk"><rect x="-1.5" y="0" width="3" height="16" fill="#ffffff"/><line x1="0" y1="16" x2="0" y2="52" stroke="#f5c76a" stroke-width="3" opacity="0.7"/></g><g class="bst"><path d="M-16 -110 L16 -110 M0 -126 L0 -94 M-11 -121 L11 -99 M11 -121 L-11 -99" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="0" cy="-110" r="4" fill="#f5c76a"/></g></g><g class="t1"><text x="56" y="352" class="z1">00.05</text><text x="56" y="378" class="z2">sekoci dibuka, penumpang dibangunkan</text></g><g class="t2"><text x="56" y="352" class="z1">00.45</text><text x="56" y="378" class="z2">sekoci pertama turun, kembang api</text></g><g class="t3"><text x="56" y="352" class="z1">02.05</text><text x="56" y="378" class="z2">sekoci terakhir turun</text></g><g class="bar"><text x="630" y="358" class="z5" text-anchor="end">kursi sekoci: 1.178</text><rect x="530" y="364" width="100" height="8" fill="#5ec2a0"/><text x="630" y="386" class="z5" text-anchor="end">orang di kapal: sekitar 2.200</text><rect x="443" y="390" width="187" height="8" fill="#e8574a"/></g></svg></div>
+<div class="figbar"><figcaption>Selama evakuasi haluan makin turun sehingga kapal makin miring. Kembang api darurat ditembakkan untuk menarik perhatian kapal lain. Dua puluh sekoci hanya menampung sekitar 1.178 orang.</figcaption><button class="btn rp" type="button"><span aria-hidden="true">&#8635;</span> Tekan untuk ulangi</button></div></figure>
+</div>
+
+<div class="step reveal">
+<div class="num">4</div>
+<div class="time">SEKITAR 02.20</div>
+<h3>Terbelah dan tenggelam</h3>
+<p>Haluan tenggelam lebih dulu dan buritan terangkat tinggi di atas air. Lampu kapal bertahan sampai saat-saat terakhir, lalu padam. Kapal patah dua sebelum menyentuh dasar laut, dan pukul 02.20, dua jam 40 menit setelah tabrakan, ia hilang di bawah permukaan.</p>
+<figure class="ill"><div class="frame"><svg id="t" class="vz" data-auto="1" viewBox="40 60 600 340" role="img" aria-labelledby="t-t"><title id="t-t">Titanic terbelah dua dan tenggelam</title><defs><clipPath id="cb_t"><rect x="262" y="-200" width="600" height="800"/></clipPath><clipPath id="cs_t"><rect x="-200" y="-200" width="462.5" height="800"/></clipPath></defs><rect width="680" height="400" fill="#0b1a33"/><rect y="150" width="680" height="118" fill="#12294a" opacity="0.55"/><circle cx="90" cy="75" r="1.5" fill="#cfe0ff"/><circle cx="330" cy="68" r="1" fill="#cfe0ff"/><circle cx="480" cy="80" r="1.5" fill="#cfe0ff"/><circle cx="600" cy="72" r="1" fill="#cfe0ff"/><circle cx="560" cy="140" r="1" fill="#cfe0ff"/><circle cx="60" cy="130" r="1" fill="#cfe0ff"/><circle cx="410" cy="100" r="1" fill="#cfe0ff"/><rect y="268" width="680" height="132" fill="#0a2340"/><g transform="translate(680,0) scale(-1,1)"><g class="sh"><g class="sw"><g clip-path="url(#cs_t)"><path d="M90 232 L560 232 L612 222 L588 292 L122 292 Q96 286 90 232 Z" fill="#17181d"/><path d="M108 270 L593 270 L588 292 L122 292 Q112 290 108 270 Z" fill="#8b1c1c"/><rect x="205" y="190" width="290" height="16" fill="#e4e6ea"/><rect x="158" y="206" width="384" height="26" fill="#f0f1f4"/><rect x="232" y="118" width="28" height="74" fill="#d9a441"/><rect x="232" y="118" width="28" height="12" fill="#17181d"/><rect x="292" y="118" width="28" height="74" fill="#d9a441"/><rect x="292" y="118" width="28" height="12" fill="#17181d"/><rect x="352" y="118" width="28" height="74" fill="#d9a441"/><rect x="352" y="118" width="28" height="12" fill="#17181d"/><rect x="412" y="118" width="28" height="74" fill="#d9a441"/><rect x="412" y="118" width="28" height="12" fill="#17181d"/><rect x="548" y="128" width="3" height="104" fill="#3a3f4a"/><rect x="130" y="148" width="3" height="84" fill="#3a3f4a"/><line x1="550" y1="130" x2="612" y2="222" stroke="#6b7385" stroke-width="0.6"/><line x1="550" y1="130" x2="490" y2="190" stroke="#6b7385" stroke-width="0.6"/><line x1="132" y1="150" x2="95" y2="232" stroke="#6b7385" stroke-width="0.6"/><line x1="132" y1="150" x2="200" y2="190" stroke="#6b7385" stroke-width="0.6"/><line x1="170" y1="198" x2="486" y2="198" stroke="#f5c76a" stroke-width="4" stroke-dasharray="4 8"/><line x1="170" y1="220" x2="530" y2="220" stroke="#f5c76a" stroke-width="5" stroke-dasharray="5 7"/><line class="ph" x1="125" y1="246" x2="572" y2="246" stroke="#f5c76a" stroke-width="3" stroke-dasharray="3 9"/><g class="pd"><line x1="200" y1="184" x2="490" y2="184" stroke="#3a3f4a" stroke-width="5" stroke-linecap="round" stroke-dasharray="0.1 8"/></g></g></g><g class="bw"><g clip-path="url(#cb_t)"><path d="M90 232 L560 232 L612 222 L588 292 L122 292 Q96 286 90 232 Z" fill="#17181d"/><path d="M108 270 L593 270 L588 292 L122 292 Q112 290 108 270 Z" fill="#8b1c1c"/><rect x="205" y="190" width="290" height="16" fill="#e4e6ea"/><rect x="158" y="206" width="384" height="26" fill="#f0f1f4"/><rect x="232" y="118" width="28" height="74" fill="#d9a441"/><rect x="232" y="118" width="28" height="12" fill="#17181d"/><rect x="292" y="118" width="28" height="74" fill="#d9a441"/><rect x="292" y="118" width="28" height="12" fill="#17181d"/><rect x="352" y="118" width="28" height="74" fill="#d9a441"/><rect x="352" y="118" width="28" height="12" fill="#17181d"/><rect x="412" y="118" width="28" height="74" fill="#d9a441"/><rect x="412" y="118" width="28" height="12" fill="#17181d"/><rect x="548" y="128" width="3" height="104" fill="#3a3f4a"/><rect x="130" y="148" width="3" height="84" fill="#3a3f4a"/><line x1="550" y1="130" x2="612" y2="222" stroke="#6b7385" stroke-width="0.6"/><line x1="550" y1="130" x2="490" y2="190" stroke="#6b7385" stroke-width="0.6"/><line x1="132" y1="150" x2="95" y2="232" stroke="#6b7385" stroke-width="0.6"/><line x1="132" y1="150" x2="200" y2="190" stroke="#6b7385" stroke-width="0.6"/><line x1="170" y1="198" x2="486" y2="198" stroke="#f5c76a" stroke-width="4" stroke-dasharray="4 8"/><line x1="170" y1="220" x2="530" y2="220" stroke="#f5c76a" stroke-width="5" stroke-dasharray="5 7"/><line class="ph" x1="125" y1="246" x2="572" y2="246" stroke="#f5c76a" stroke-width="3" stroke-dasharray="3 9"/><g class="pd"><line x1="200" y1="184" x2="490" y2="184" stroke="#3a3f4a" stroke-width="5" stroke-linecap="round" stroke-dasharray="0.1 8"/></g></g></g></g></g><rect y="268" width="680" height="132" fill="#0a2340" opacity="0.88"/><path d="M0 268 Q85 265 170 268 T340 268 T510 268 T680 268" fill="none" stroke="#bcd3ee" stroke-width="1" opacity="0.5"/><g class="w"><path d="M-170 300 Q-85 296 0 300 T170 300 T340 300 T510 300 T680 300 T850 300" fill="none" stroke="#1d3d66" stroke-width="1"/><path d="M-170 340 Q-85 336 0 340 T170 340 T340 340 T510 340 T680 340 T850 340" fill="none" stroke="#1d3d66" stroke-width="1"/></g><ellipse class="sp" cx="418" cy="268" rx="40" ry="6" fill="#bcd3ee"/><g class="deb"><g class="bb"><rect x="250" y="270" width="26" height="4" fill="#b59f7a" transform="rotate(-8 263 272)"/><rect x="300" y="274" width="20" height="4" fill="#b59f7a" transform="rotate(10 310 276)"/><rect x="350" y="270" width="30" height="4" fill="#b59f7a" transform="rotate(-4 365 272)"/><rect x="410" y="276" width="18" height="4" fill="#b59f7a" transform="rotate(14 419 278)"/><circle cx="330" cy="272" r="5" fill="#b59f7a"/><circle cx="445" cy="274" r="4" fill="#b59f7a"/></g></g><g transform="translate(140,330) scale(2)"><use class="bb" href="#lbD" style="animation-delay:0s"/></g><g transform="translate(290,340) scale(2)"><use class="bb" href="#lbD" style="animation-delay:0.8s"/></g><g transform="translate(440,332) scale(2)"><use class="bb" href="#lbD" style="animation-delay:1.6s"/></g><g transform="translate(570,342) scale(2)"><use class="bb" href="#lbD" style="animation-delay:2.4s"/></g><g class="l1"><text x="56" y="110" class="z2">Haluan tenggelam, buritan terangkat</text></g><g class="l2"><text x="56" y="110" class="z2">Kapal patah dua</text></g><g class="l3"><text x="56" y="110" class="z1">02.20</text><text x="56" y="132" class="z2">kapal hilang dari permukaan</text></g><g class="l4"><text x="56" y="160" class="z5">Yang tersisa: puing dan sekoci</text></g><g class="l5"><text x="630" y="394" class="z5" text-anchor="end">sekitar 705 orang selamat</text></g></svg></div>
+<div class="figbar"><figcaption>Rekonstruksi: haluan tenggelam lebih dulu, kapal patah dua, lalu hilang dari permukaan. Yang tersisa hanya puing dan sekoci.</figcaption><button class="btn rp" type="button"><span aria-hidden="true">&#8635;</span> Tekan untuk ulangi</button></div></figure>
+</div>
+
+<div class="step reveal">
+<div class="num">5</div>
+<div class="time">04.10 SAMPAI 08.30</div>
+<h3>Setelah tenggelam</h3>
+<p>Kapal Carpathia, yang berjarak sekitar 58 mil (sekitar 93 km), mendengar sinyal darurat dan melaju ke lokasi. Sekoci pertama dijemput sekitar pukul 04.10, dan Carpathia membawa sekitar 705 korban selamat ke New York. Kapal Californian, yang jauh lebih dekat (sekitar 16 sampai 30 km), tidak datang. Operator radionya hanya satu dan sudah tidur, padahal awaknya sempat melihat delapan kembang api darurat. Penyelidikan di Amerika dan Inggris menyimpulkan banyak atau semua korban mungkin bisa diselamatkan jika Californian merespons. Tragedi ini mengubah aturan pelayaran dunia. Konvensi SOLAS 1914 menetapkan bahwa sekoci dan jaket pelampung harus tersedia untuk semua orang di kapal, dan pada tahun yang sama International Ice Patrol dibentuk untuk mengawasi gunung es di jalur Atlantik Utara. Penerapan konvensi itu sendiri tersendat oleh pecahnya Perang Dunia I.</p>
+<figure class="ill"><div class="frame"><svg id="s" class="vz" data-auto="1" viewBox="40 60 600 340" role="img" aria-labelledby="s-t"><title id="s-t">Setelah tenggelam, Carpathia menjemput sekoci dan Californian tidak datang</title><rect width="680" height="400" fill="#0b1a33"/><rect y="150" width="680" height="118" fill="#12294a" opacity="0.55"/><path d="M52 70h.01M98 112h.01M144 78h.01M188 150h.01M232 96h.01M268 64h.01M312 130h.01M356 82h.01M398 118h.01M440 70h.01M486 140h.01M520 96h.01M566 66h.01M604 124h.01M628 88h.01M74 176h.01M126 214h.01M170 188h.01M214 236h.01M258 202h.01M302 170h.01M346 226h.01M392 190h.01M436 244h.01M478 208h.01M524 176h.01M568 232h.01M610 196h.01M640 250h.01M60 246h.01M110 150h.01M160 104h.01M206 62h.01M250 148h.01M294 100h.01M338 66h.01M384 154h.01M430 108h.01M474 76h.01M516 224h.01M552 150h.01M596 82h.01M624 160h.01" stroke="#cfe0ff" stroke-width="2" stroke-linecap="round" opacity="0.75"/><path class="tw" d="M90 90h.01M220 130h.01M330 190h.01M450 170h.01M590 110h.01M160 240h.01M520 60h.01M400 80h.01" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/><rect y="268" width="680" height="132" fill="#0a2340"/><path d="M0 268 Q85 265 170 268 T340 268 T510 268 T680 268" fill="none" stroke="#bcd3ee" stroke-width="1" opacity="0.5"/><g class="cf"><g transform="translate(612,268)"><path d="M-16 0 L16 0 L19 -5 L-18 -5 Z" fill="#4a5568"/><rect x="-6" y="-9" width="12" height="4" fill="#5a6578"/><line x1="-12" y1="-5" x2="-12" y2="-14" stroke="#2a3140" stroke-width="1"/><line x1="12" y1="-5" x2="12" y2="-14" stroke="#2a3140" stroke-width="1"/><circle cx="-4" cy="-7" r="1.4" fill="#ffd98a"/><circle cx="2" cy="-7" r="1.4" fill="#ffd98a"/><circle cx="8" cy="-3" r="1.2" fill="#ffd98a"/><circle cx="-12" cy="-14" r="1.4" fill="#ffffff"/></g></g><g class="rs"><use href="#spC"/></g><g class="bt"><g transform="translate(300,324) scale(1.2)"><use class="bb" href="#lbD" style="animation-delay:0s"/></g><g transform="translate(410,336) scale(1.2)"><use class="bb" href="#lbD" style="animation-delay:0.8s"/></g><g transform="translate(510,322) scale(1.2)"><use class="bb" href="#lbD" style="animation-delay:1.6s"/></g><g transform="translate(590,338) scale(1.2)"><use class="bb" href="#lbD" style="animation-delay:2.4s"/></g></g><g class="n1"><text x="250" y="166" class="z3 zy" text-anchor="middle">Carpathia</text></g><g class="t1"><text x="56" y="352" class="z1">02.20</text><text x="56" y="378" class="z2">kapal hilang, sekoci menunggu dalam gelap</text></g><g class="t2"><text x="56" y="352" class="z1">sekitar 58 mil</text><text x="56" y="378" class="z2">Carpathia melaju ke lokasi</text></g><g class="t3"><text x="56" y="352" class="z1">04.10</text><text x="56" y="378" class="z2">sekoci pertama dijemput Carpathia</text></g><g class="t4"><text x="56" y="352" class="z1">sekitar 705 selamat</text><text x="56" y="378" class="z2">dijemput sampai sekitar 08.30</text></g><g class="t5"><text x="630" y="222" class="z3" text-anchor="end">Californian</text><text x="630" y="244" class="z2" text-anchor="end">lebih dekat, tidak datang</text></g></svg></div>
+<div class="figbar"><figcaption>Carpathia menjemput penyintas di sekoci, sedangkan Californian yang jauh lebih dekat tidak datang.</figcaption><button class="btn rp" type="button"><span aria-hidden="true">&#8635;</span> Tekan untuk ulangi</button></div></figure>
+</div>
+
+<div class="step reveal">
+<div class="num">6</div>
+<div class="time">1912 SAMPAI SEKARANG</div>
+<h3>Bangkai</h3>
+<p>Selama 73 tahun bangkai tidak ditemukan. Pada 1 September 1985 tim gabungan Prancis dan Amerika menemukannya di kedalaman sekitar 3.800 meter. Kapal terbaring dalam dua bagian sejauh sekitar 600 meter, dengan medan puing di antaranya. Haluan masih dikenali, sedangkan buritan hancur. Kini mikroba pemakan besi membentuk rusticle yang menggerogoti kapal, dan ekspedisi 2019 menemukan kerusakan yang mengejutkan.</p>
+<figure class="ill"><div class="frame"><svg id="b" class="vz" viewBox="40 60 600 340" role="img" aria-labelledby="b-t"><title id="b-t">Bangkai Titanic jatuh ke dasar laut dan terbaring terpisah</title><rect width="680" height="100" fill="#0d3354"/><rect y="100" width="680" height="100" fill="#0a2542"/><rect y="200" width="680" height="100" fill="#071a31"/><rect y="300" width="680" height="100" fill="#050f1f"/><circle class="sn" cx="80" cy="120" r="1.4" fill="#cfe0ff" style="animation-delay:-1s"/><circle class="sn" cx="200" cy="200" r="1.4" fill="#cfe0ff" style="animation-delay:-4s"/><circle class="sn" cx="330" cy="150" r="1.4" fill="#cfe0ff" style="animation-delay:-6s"/><circle class="sn" cx="450" cy="230" r="1.4" fill="#cfe0ff" style="animation-delay:-2s"/><circle class="sn" cx="580" cy="180" r="1.4" fill="#cfe0ff" style="animation-delay:-5s"/><circle class="sn" cx="120" cy="270" r="1.4" fill="#cfe0ff" style="animation-delay:-3s"/><circle class="sn" cx="500" cy="110" r="1.4" fill="#cfe0ff" style="animation-delay:-7s"/><path d="M0 332 Q120 324 240 334 T480 332 T680 328 L680 400 L0 400 Z" fill="#111823" stroke="#1a2230" stroke-width="1.5"/><g class="dsc"><line x1="624" y1="70" x2="624" y2="332" stroke="#4a5a72" stroke-width="1"/><path d="M619 70H629M619 139H629M619 208H629M619 277H629M619 332H629" stroke="#4a5a72" stroke-width="1" fill="none"/><text x="614" y="74" class="z6" text-anchor="end">0 m</text><text x="614" y="143" class="z6" text-anchor="end">1.000</text><text x="614" y="212" class="z6" text-anchor="end">2.000</text><text x="614" y="281" class="z6" text-anchor="end">3.000</text><text x="614" y="326" class="z6" text-anchor="end">3.800</text></g><g class="db" style="animation-delay:0s"><rect x="300" y="64" width="22" height="4" fill="#5a7a9a"/></g><g class="db" style="animation-delay:1s"><rect x="340" y="60" width="18" height="4" fill="#5a7a9a"/></g><g class="db" style="animation-delay:2s"><circle cx="372" cy="64" r="3" fill="#5a7a9a"/></g><g class="db" style="animation-delay:3s"><rect x="396" y="62" width="26" height="5" rx="2" fill="#5a7a9a"/></g><g class="db" style="animation-delay:4s"><circle cx="430" cy="64" r="2.5" fill="#5a7a9a"/></g><g class="db" style="animation-delay:5s"><rect x="448" y="62" width="16" height="4" fill="#5a7a9a"/></g><g class="bw"><g transform="scale(1.15)"><path d="M-100 -30 L-96 -62 L96 -66 L100 -20 L88 0 L-62 0 Q-94 -8 -100 -30 Z" fill="#161a22"/><path d="M-86 -10 L90 -10 L88 0 L-62 0 Q-80 -3 -86 -10 Z" fill="#6b2a24"/><path d="M-60 -66 L-40 -90 L70 -92 L84 -66 Z" fill="#222836"/><line x1="-50" y1="-78" x2="70" y2="-78" stroke="#3a4358" stroke-width="3" stroke-dasharray="4 6"/><rect x="-80" y="-112" width="3" height="46" fill="#3a3f4a" transform="rotate(14 -78 -66)"/><ellipse cx="-30" cy="-40" rx="18" ry="6" fill="#5a3a2a" opacity="0.5"/><ellipse cx="40" cy="-30" rx="22" ry="5" fill="#5a3a2a" opacity="0.5"/></g></g><g class="sw"><g transform="scale(1.1)"><path d="M-70 0 L-62 -34 L-40 -20 L-26 -58 L-4 -30 L14 -64 L34 -28 L52 -44 L66 0 Z" fill="#14171f"/><path d="M-50 0 L-30 -26 L-8 -6 L22 -34 L44 0 Z" fill="#1b2029"/><path d="M-60 -34 Q-40 -50 -26 -58 M14 -64 Q30 -76 44 -66 M52 -44 Q70 -52 78 -34" fill="none" stroke="#3a2f2a" stroke-width="2"/><ellipse cx="-10" cy="-14" rx="16" ry="5" fill="#5a3a2a" opacity="0.5"/></g></g><g class="jd"><rect x="300" y="324" width="34" height="13" rx="6" fill="#2a2f3a" stroke="#3a4150"/><rect x="372" y="327" width="30" height="12" rx="5" fill="#2a2f3a" stroke="#3a4150"/><rect x="430" y="323" width="26" height="12" rx="5" fill="#2a2f3a" stroke="#3a4150"/><ellipse cx="282" cy="336" rx="9" ry="3" fill="#3a3028"/><ellipse cx="346" cy="338" rx="7" ry="3" fill="#3a3028"/><ellipse cx="410" cy="338" rx="10" ry="3" fill="#3a3028"/><ellipse cx="462" cy="340" rx="7" ry="2.5" fill="#3a3028"/></g><ellipse class="pf pf1" cx="150" cy="334" rx="60" ry="8" fill="#2a3445"/><ellipse class="pf pf2" cx="540" cy="338" rx="60" ry="8" fill="#2a3445"/><text x="570" y="100" id="dp" class="z7 dp" text-anchor="end">0 m</text></svg></div>
+<div class="figbar"><figcaption>Kapal yang sudah terbelah dua tenggelam sekitar 3.800 meter menuju dasar Atlantik Utara. Tidak ada yang melihatnya, jadi gambar ini rekonstruksi.</figcaption><button class="btn" id="brp" type="button"><span aria-hidden="true">&#8635;</span> Tekan untuk ulangi</button></div></figure>
+</div>
+
+</section>
+
+<section class="sec reveal" id="mitos">
+<div class="kicker">Bagian 3</div>
+<h2>Fakta dan Mitos</h2>
+<p>Sembilan hal yang paling sering salah dipahami tentang Titanic. Buka satu per satu untuk melihat apa yang dicatat sumber.</p>
+
+<details class="card"><summary><span class="cn">1</span>Bahkan Tuhan tidak dapat menenggelamkannya</summary><div class="cb">
+<span class="lbl m">Mitos</span><p>White Star Line atau awak kapal sesumbar bahwa bahkan Tuhan tidak dapat menenggelamkan Titanic.</p>
+<span class="lbl f">Fakta</span><p>Tidak ada catatan bahwa perusahaan mengucapkannya. Kalimat itu hanya cerita keluarga seorang penumpang kelas dua tentang jawaban seorang petugas kapal. Julukan &quot;tidak dapat tenggelam&quot; sendiri lebih hati-hati dari legendanya: majalah industri The Shipbuilder menyebut kapal kelas ini &quot;practically unsinkable&quot; (hampir tidak bisa tenggelam) pada Juni 1911, dan kata &quot;unsinkable&quot; di iklan dan koran umumnya disertai kata penyerta seperti &quot;hampir&quot;. Satu pernyataan yang tegas datang dari pejabat perusahaan induknya, Albert Franklin, yang menyebut tidak ada bahaya Titanic akan tenggelam.</p>
+<p class="src">Sumber: Naval Encyclopedia, Mental Floss, Samford University.</p></div></details>
+
+<details class="card"><summary><span class="cn">2</span>16 kompartemen membuat kapal aman</summary><div class="cb">
+<span class="lbl m">Mitos</span><p>Dengan 16 kompartemen kedap air, kapal tak mungkin tenggelam.</p>
+<span class="lbl f">Fakta</span><p>Kapal dirancang tetap mengapung jika empat kompartemen kebanjiran. Es membuka lima.</p>
+<p class="src">Sumber: Britannica.</p></div></details>
+
+<details class="card"><summary><span class="cn">3</span>Sekoci kurang karena melanggar hukum</summary><div class="cb">
+<span class="lbl m">Mitos</span><p>Titanic aturan demi menghemat ruang dek.</p>
+<span class="lbl f">Fakta</span><p>Titanic justru memenuhi aturan: 20 sekoci untuk sekitar 1.178 orang, sedangkan aturan 1894 mensyaratkan 16 sekoci untuk kapal di atas 10.000 ton, dihitung dari tonase, bukan jumlah penumpang. Aturan itu usang dan Board of Trade dikritik karena lama tidak memperbaruinya. Konvensi SOLAS 1914 kemudian mewajibkan sekoci untuk semua orang di kapal.</p>
+<p class="src">Sumber: Library of Congress, laporan Wreck Commissioner.</p></div></details>
+
+<details class="card"><summary><span class="cn">4</span>Ironi: kelas 1 lebih banyak selamat daripada kelas 3</summary><div class="cb">
+<span class="lbl f">Fakta</span><p>Menurut laporan resmi Lord Mersey, penumpang kelas 1 selamat jauh lebih banyak daripada kelas 3, walau aturan evakuasi mendahulukan perempuan dan anak.</p>
+<p class="bh2">Persentase selamat per kelas dan jenis kelamin</p>
+<div class="bars">
+<div class="bh">Kelas 1</div>
+<div class="brow"><span>Pria</span><div class="bar"><i style="--w:32.6%"></i></div><em>32,6% (57 dari 175)</em></div>
+<div class="brow"><span>Wanita</span><div class="bar"><i class="w" style="--w:97.2%"></i></div><em>97,2% (140 dari 144)</em></div>
+<div class="brow"><span>Total</span><div class="bar"><i class="t" style="--w:62.5%"></i></div><em>62,5% (203 dari 325)</em></div>
+<div class="bh">Kelas 2</div>
+<div class="brow"><span>Pria</span><div class="bar"><i style="--w:8.3%"></i></div><em>8,3% (14 dari 168)</em></div>
+<div class="brow"><span>Wanita</span><div class="bar"><i class="w" style="--w:86.0%"></i></div><em>86,0% (80 dari 93)</em></div>
+<div class="brow"><span>Total</span><div class="bar"><i class="t" style="--w:41.4%"></i></div><em>41,4% (118 dari 285)</em></div>
+<div class="bh">Kelas 3</div>
+<div class="brow"><span>Pria</span><div class="bar"><i style="--w:16.2%"></i></div><em>16,2% (75 dari 462)</em></div>
+<div class="brow"><span>Wanita</span><div class="bar"><i class="w" style="--w:46.1%"></i></div><em>46,1% (76 dari 165)</em></div>
+<div class="brow"><span>Total</span><div class="bar"><i class="t" style="--w:25.2%"></i></div><em>25,2% (178 dari 706)</em></div>
+<div class="bh">Awak kapal</div>
+<div class="brow"><span>Total</span><div class="bar"><i class="t" style="--w:24.0%"></i></div><em>24,0% (212 dari 885)</em></div>
+</div>
+<p class="bn">Persentase pria dan wanita dihitung dari penumpang dewasa. Total kelas sudah termasuk anak-anak.</p>
+<p>Aturan perempuan dan anak lebih dulu terlihat jelas dalam angkanya. Wanita kelas 1 selamat 97,2 persen, sedangkan pria dewasa kelas 1 hanya 32,6 persen. Pria kelas 2 justru paling rendah, 8,3 persen, bahkan di bawah pria kelas 3 (16,2 persen). Sebagian selisih antarkelas dipengaruhi komposisi, karena kelas 3 punya lebih banyak laki-laki, tetapi jurang yang tersisa setelah itu tetap nyata.</p>
+<p class="src">Sumber: laporan Wreck Commissioner.</p></div></details>
+
+<details class="card"><summary><span class="cn">5</span>Kapten tenggelam bersama kapalnya</summary><div class="cb">
+<span class="lbl f">Fakta</span><p>Kapten Edward Smith ikut tewas saat Titanic tenggelam. Menurut kesaksian, Smith masih berada di kapal sampai saat-saat terakhir, dan jasadnya tidak pernah ditemukan.</p>
+<p class="src">Sumber: History.com (Greg Daugherty).</p></div></details>
+
+<details class="card"><summary><span class="cn">6</span>Kapal terdekat yang datang menolong</summary><div class="cb">
+<span class="lbl m">Mitos</span><p>Kapal yang menyelamatkan korban adalah yang paling dekat.</p>
+<span class="lbl f">Fakta</span><p>Californian jauh lebih dekat tetapi tidak datang karena satu-satunya operator radionya sudah tidur, padahal awaknya melihat delapan kembang api darurat. Carpathia justru berjarak lebih jauh dan datang sekitar pukul 04.10, sekitar 1 jam 50 menit setelah kapal tenggelam. Penyelidikan menyimpulkan banyak atau semua korban mungkin bisa diselamatkan jika Californian merespons.</p>
+<div class="bars">
+<div class="brow"><span>Californian</span><div class="bar"><i style="--w:32%"></i></div><em>sekitar 16 sampai 30 km</em></div>
+<div class="brow"><span>Carpathia</span><div class="bar"><i style="--w:100%"></i></div><em>sekitar 93 km (58 mil)</em></div>
+</div>
+<p class="src">Sumber: laporan Wreck Commissioner (assistance), kesaksian Kapten Rostron, Titanic Inquiry Project. Perkiraan jarak Californian berbeda antar sumber.</p></div></details>
+
+<details class="card"><summary><span class="cn">7</span>Korban meninggal karena tidak bisa berenang</summary><div class="cb">
+<span class="lbl m">Mitos</span><p>Banyak korban tenggelam karena tidak bisa berenang.</p>
+<span class="lbl f">Fakta</span><p>Kapal membawa 3.560 pelampung untuk semua orang di kapal, dan pramugara membantu penumpang memakainya. Suhu air sekitar minus 2 derajat Celsius, sehingga sebagian besar korban meninggal karena hipotermia dan syok dingin, bukan tenggelam. Menurut sumber populer, kesadaran bisa hilang dalam sekitar 15 menit dan sebagian besar korban bertahan 15 sampai 45 menit.</p>
+<p class="src">Sumber: laporan Wreck Commissioner (life-saving appliances, saving and rescue). Waktu bertahan dari sumber populer dan perlu diperkuat dengan literatur medis.</p></div></details>
+
+<details class="card"><summary><span class="cn">8</span>Bangkai Titanic cepat ditemukan</summary><div class="cb">
+<span class="lbl m">Mitos</span><p>Bangkai ditemukan tak lama setelah tenggelam.</p>
+<span class="lbl f">Fakta</span><p>Bangkai ditemukan 1 September 1985, 73 tahun kemudian, oleh tim gabungan Prancis dan Amerika. Percobaan sebelumnya gagal: Ballard pada 1977 dan Jack Grimm pada 1980 sampai 1983, yang sonarnya bahkan sempat melintas dekat bangkai tanpa mendeteksinya. Ballard akhirnya berhasil dengan mencari jejak puing.</p>
+<figure class="ill"><div class="frame"><svg id="d" class="vz" viewBox="40 60 600 340" role="img" aria-labelledby="d-t"><title id="d-t">Kapal selam berputar pelan menyorot bangkai Titanic di dasar laut</title><defs><path id="rsd_d" d="M0 0 Q3 6 0 18 Q-3 6 0 0 Z" fill="#c06a35"/></defs><rect width="680" height="100" fill="#0d3354"/><rect y="100" width="680" height="100" fill="#0a2542"/><rect y="200" width="680" height="100" fill="#071a31"/><rect y="300" width="680" height="100" fill="#050f1f"/><circle class="sn" cx="60" cy="120" r="1.8" fill="#dfe9f5" style="animation-delay:-1s"/><circle class="sn" cx="130" cy="200" r="1.8" fill="#dfe9f5" style="animation-delay:-4s"/><circle class="sn" cx="210" cy="140" r="1.8" fill="#dfe9f5" style="animation-delay:-6s"/><circle class="sn" cx="290" cy="230" r="1.8" fill="#dfe9f5" style="animation-delay:-2s"/><circle class="sn" cx="370" cy="170" r="1.8" fill="#dfe9f5" style="animation-delay:-5s"/><circle class="sn" cx="450" cy="240" r="1.8" fill="#dfe9f5" style="animation-delay:-3s"/><circle class="sn" cx="530" cy="180" r="1.8" fill="#dfe9f5" style="animation-delay:-7s"/><circle class="sn" cx="600" cy="250" r="1.8" fill="#dfe9f5" style="animation-delay:-1.5s"/><circle class="sn" cx="90" cy="270" r="1.8" fill="#dfe9f5" style="animation-delay:-2.5s"/><circle class="sn" cx="330" cy="260" r="1.8" fill="#dfe9f5" style="animation-delay:-4.5s"/><path d="M0 332 Q120 324 240 334 T480 332 T680 328 L680 400 L0 400 Z" fill="#111823"/><path d="M0 350 Q150 344 300 352 T680 348" fill="none" stroke="#1a2230" stroke-width="1.5"/><path d="M0 372 Q170 366 340 374 T680 370" fill="none" stroke="#1a2230" stroke-width="1.5"/><g><rect x="300" y="322" width="36" height="14" rx="6" fill="#4a4f5a" stroke="#5a606c"/><rect x="372" y="326" width="32" height="13" rx="5" fill="#4a4f5a" stroke="#5a606c"/><rect x="430" y="322" width="28" height="13" rx="5" fill="#4a4f5a" stroke="#5a606c"/><ellipse cx="282" cy="336" rx="10" ry="3" fill="#5a4a3a"/><ellipse cx="346" cy="338" rx="8" ry="3" fill="#5a4a3a"/><ellipse cx="412" cy="338" rx="10" ry="3" fill="#5a4a3a"/></g><g transform="translate(175,262)"><g class="back"><g class="orb"><g class="dep"><g transform="scale(1.3) scale(-1,1)"><polygon class="lc" points="22,2 120,50 70,72 18,12" fill="#f5e9a8" opacity="0.26"/><ellipse cx="0" cy="0" rx="22" ry="12" fill="#e6e9ef"/><rect x="-6" y="-18" width="12" height="8" rx="2" fill="#cfd3da"/><path d="M-20 -2 Q0 -12 20 -2" fill="none" stroke="#c9763a" stroke-width="2"/><circle cx="12" cy="-1" r="3.2" fill="#5a8fb0"/><rect x="-27" y="-3" width="6" height="6" rx="1" fill="#8e95a1"/><line x1="10" y1="10" x2="24" y2="20" stroke="#cfd3da" stroke-width="1.5"/><circle class="lc" cx="22" cy="2" r="3" fill="#fff6c8"/></g></g></g></g></g><g transform="translate(170,332) scale(1.15) rotate(-3)"><path d="M-100 -30 L-96 -62 L96 -66 L100 -20 L88 0 L-62 0 Q-94 -8 -100 -30 Z" fill="#323744"/><path d="M-86 -10 L90 -10 L88 0 L-62 0 Q-80 -3 -86 -10 Z" fill="#6b3a30"/><path d="M-60 -66 L-40 -90 L70 -92 L84 -66 Z" fill="#3d4352"/><line x1="-50" y1="-78" x2="70" y2="-78" stroke="#5a6478" stroke-width="3" stroke-dasharray="4 6"/><rect x="-80" y="-112" width="3" height="46" fill="#5a606c" transform="rotate(14 -78 -66)"/><ellipse cx="-30" cy="-40" rx="18" ry="6" fill="#7a4a30" opacity="0.7"/><ellipse cx="40" cy="-30" rx="22" ry="5" fill="#7a4a30" opacity="0.7"/><g transform="translate(-70,-66) scale(1,1)"><use class="rs" href="#rsd_d"/></g><g transform="translate(-50,-66) scale(1.1,1.4)"><use class="rs" href="#rsd_d"/></g><g transform="translate(-20,-66) scale(1,1.2)"><use class="rs" href="#rsd_d"/></g><g transform="translate(10,-66) scale(1.2,1.6)"><use class="rs" href="#rsd_d"/></g><g transform="translate(40,-66) scale(1,1)"><use class="rs" href="#rsd_d"/></g><g transform="translate(70,-66) scale(1,1.3)"><use class="rs" href="#rsd_d"/></g><g transform="translate(-30,-90) scale(1.1,1.2)"><use class="rs" href="#rsd_d"/></g><g transform="translate(0,-91) scale(1,1.5)"><use class="rs" href="#rsd_d"/></g><g transform="translate(30,-92) scale(1,1)"><use class="rs" href="#rsd_d"/></g><g transform="translate(60,-90) scale(1.2,1.3)"><use class="rs" href="#rsd_d"/></g><g transform="translate(-96,-50) scale(1,1.2)"><use class="rs" href="#rsd_d"/></g><g transform="translate(-97,-34) scale(1,1)"><use class="rs" href="#rsd_d"/></g></g><g transform="translate(540,336) scale(1.1) rotate(2)"><path d="M-70 0 L-62 -34 L-40 -20 L-26 -58 L-4 -30 L14 -64 L34 -28 L52 -44 L66 0 Z" fill="#2e323d"/><path d="M-50 0 L-30 -26 L-8 -6 L22 -34 L44 0 Z" fill="#363c49"/><path d="M-60 -34 Q-40 -50 -26 -58 M14 -64 Q30 -76 44 -66 M52 -44 Q70 -52 78 -34" fill="none" stroke="#6a4a3a" stroke-width="2"/><ellipse cx="-10" cy="-14" rx="16" ry="5" fill="#7a4a30" opacity="0.7"/><g transform="translate(-40,-20) scale(1,1)"><use class="rs" href="#rsd_d"/></g><g transform="translate(-26,-58) scale(1,1.3)"><use class="rs" href="#rsd_d"/></g><g transform="translate(14,-64) scale(1.1,1.4)"><use class="rs" href="#rsd_d"/></g><g transform="translate(34,-28) scale(1,1)"><use class="rs" href="#rsd_d"/></g><g transform="translate(52,-44) scale(1,1.2)"><use class="rs" href="#rsd_d"/></g><g transform="translate(-62,-34) scale(1,1)"><use class="rs" href="#rsd_d"/></g></g><g transform="translate(175,262)"><g class="front"><g class="orb"><g class="dep"><g transform="scale(1.3)"><polygon class="lc" points="22,2 120,50 70,72 18,12" fill="#f5e9a8" opacity="0.26"/><ellipse cx="0" cy="0" rx="22" ry="12" fill="#e6e9ef"/><rect x="-6" y="-18" width="12" height="8" rx="2" fill="#cfd3da"/><path d="M-20 -2 Q0 -12 20 -2" fill="none" stroke="#c9763a" stroke-width="2"/><circle cx="12" cy="-1" r="3.2" fill="#5a8fb0"/><rect x="-27" y="-3" width="6" height="6" rx="1" fill="#8e95a1"/><line x1="10" y1="10" x2="24" y2="20" stroke="#cfd3da" stroke-width="1.5"/><circle class="lc" cx="22" cy="2" r="3" fill="#fff6c8"/></g></g></g></g></g><text x="630" y="92" class="z6 zl" text-anchor="end">kedalaman sekitar 3.800 m</text></svg></div>
+<div class="figbar"><figcaption>Rekonstruksi: kapal selam berputar pelan menyorot bangkai di dasar laut sekitar 3.800 meter.</figcaption></div></figure>
+<p class="src">Sumber: Titanic Belfast, BBC History Revealed, Britannica.</p></div></details>
+
+<details class="card"><summary><span class="cn">9</span>Saat tenggelam, laut gelap gulita</summary><div class="cb">
+<span class="lbl m">Mitos</span><p>Kapal terlihat jelas dari sekoci sampai tenggelam, seperti dalam film.</p>
+<span class="lbl f">Fakta</span><p>Menurut saksi, malam itu langit berbintang tanpa bulan dan laut sangat gelap. Lampu kapal bertahan sampai saat-saat terakhir lalu padam, sehingga kapal hampir tidak terlihat dan hanya tampak sebagai massa gelap di depan bintang. Yang terlihat di permukaan hanya lampu kecil di sekoci.</p>
+<figure class="ill"><div class="frame"><svg id="td" class="vz" data-auto="1" viewBox="40 60 600 340" role="img" aria-labelledby="td-t"><title id="td-t">Titanic terbelah dua dan tenggelam dalam gelap</title><defs><clipPath id="cb_td"><rect x="262" y="-200" width="600" height="800"/></clipPath><clipPath id="cs_td"><rect x="-200" y="-200" width="462.5" height="800"/></clipPath></defs><rect width="680" height="400" fill="#03060d"/><rect y="190" width="680" height="78" fill="#0d192c" opacity="0.6"/><path d="M52 70h.01M98 112h.01M144 78h.01M188 150h.01M232 96h.01M268 64h.01M312 130h.01M356 82h.01M398 118h.01M440 70h.01M486 140h.01M520 96h.01M566 66h.01M604 124h.01M628 88h.01M74 176h.01M126 214h.01M170 188h.01M214 236h.01M258 202h.01M302 170h.01M346 226h.01M392 190h.01M436 244h.01M478 208h.01M524 176h.01M568 232h.01M610 196h.01M640 250h.01M60 246h.01M110 150h.01M160 104h.01M206 62h.01M250 148h.01M294 100h.01M338 66h.01M384 154h.01M430 108h.01M474 76h.01M516 224h.01M552 150h.01M596 82h.01M624 160h.01" stroke="#cfe0ff" stroke-width="2" stroke-linecap="round" opacity="0.75"/><path class="tw" d="M90 90h.01M220 130h.01M330 190h.01M450 170h.01M590 110h.01M160 240h.01M520 60h.01M400 80h.01" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/><rect y="268" width="680" height="132" fill="#02040a"/><g transform="translate(680,0) scale(-1,1)"><g class="sh"><g class="sw"><g clip-path="url(#cs_td)"><path d="M90 232 L560 232 L612 222 L588 292 L122 292 Q96 286 90 232 Z" fill="#05070b"/><path d="M108 270 L593 270 L588 292 L122 292 Q112 290 108 270 Z" fill="#0a0508"/><rect x="205" y="190" width="290" height="16" fill="#0a0d14"/><rect x="158" y="206" width="384" height="26" fill="#0b0f18"/><rect x="232" y="118" width="28" height="74" fill="#07090e"/><rect x="292" y="118" width="28" height="74" fill="#07090e"/><rect x="352" y="118" width="28" height="74" fill="#07090e"/><rect x="412" y="118" width="28" height="74" fill="#07090e"/><rect x="548" y="128" width="3" height="104" fill="#05070b"/><rect x="130" y="148" width="3" height="84" fill="#05070b"/><line x1="550" y1="130" x2="612" y2="222" stroke="#141a28" stroke-width="0.6"/><line x1="550" y1="130" x2="490" y2="190" stroke="#141a28" stroke-width="0.6"/><line x1="132" y1="150" x2="95" y2="232" stroke="#141a28" stroke-width="0.6"/><line x1="132" y1="150" x2="200" y2="190" stroke="#141a28" stroke-width="0.6"/><g class="lt"><rect x="158" y="206" width="384" height="26" fill="#e8c878" opacity="0.38"/><rect x="205" y="190" width="290" height="16" fill="#e8c878" opacity="0.32"/><rect x="232" y="164" width="28" height="28" fill="#c89a50" opacity="0.3"/><rect x="292" y="164" width="28" height="28" fill="#c89a50" opacity="0.3"/><rect x="352" y="164" width="28" height="28" fill="#c89a50" opacity="0.3"/><rect x="412" y="164" width="28" height="28" fill="#c89a50" opacity="0.3"/><line x1="170" y1="198" x2="486" y2="198" stroke="#ffd98a" stroke-width="4" stroke-dasharray="4 8"/><line x1="170" y1="220" x2="530" y2="220" stroke="#ffd98a" stroke-width="5" stroke-dasharray="5 7"/><line x1="125" y1="246" x2="572" y2="246" stroke="#ffd98a" stroke-width="3" stroke-dasharray="3 9"/></g></g></g><g class="bw"><g clip-path="url(#cb_td)"><path d="M90 232 L560 232 L612 222 L588 292 L122 292 Q96 286 90 232 Z" fill="#05070b"/><path d="M108 270 L593 270 L588 292 L122 292 Q112 290 108 270 Z" fill="#0a0508"/><rect x="205" y="190" width="290" height="16" fill="#0a0d14"/><rect x="158" y="206" width="384" height="26" fill="#0b0f18"/><rect x="232" y="118" width="28" height="74" fill="#07090e"/><rect x="292" y="118" width="28" height="74" fill="#07090e"/><rect x="352" y="118" width="28" height="74" fill="#07090e"/><rect x="412" y="118" width="28" height="74" fill="#07090e"/><rect x="548" y="128" width="3" height="104" fill="#05070b"/><rect x="130" y="148" width="3" height="84" fill="#05070b"/><line x1="550" y1="130" x2="612" y2="222" stroke="#141a28" stroke-width="0.6"/><line x1="550" y1="130" x2="490" y2="190" stroke="#141a28" stroke-width="0.6"/><line x1="132" y1="150" x2="95" y2="232" stroke="#141a28" stroke-width="0.6"/><line x1="132" y1="150" x2="200" y2="190" stroke="#141a28" stroke-width="0.6"/><g class="lt"><rect x="158" y="206" width="384" height="26" fill="#e8c878" opacity="0.38"/><rect x="205" y="190" width="290" height="16" fill="#e8c878" opacity="0.32"/><rect x="232" y="164" width="28" height="28" fill="#c89a50" opacity="0.3"/><rect x="292" y="164" width="28" height="28" fill="#c89a50" opacity="0.3"/><rect x="352" y="164" width="28" height="28" fill="#c89a50" opacity="0.3"/><rect x="412" y="164" width="28" height="28" fill="#c89a50" opacity="0.3"/><line x1="170" y1="198" x2="486" y2="198" stroke="#ffd98a" stroke-width="4" stroke-dasharray="4 8"/><line x1="170" y1="220" x2="530" y2="220" stroke="#ffd98a" stroke-width="5" stroke-dasharray="5 7"/><line x1="125" y1="246" x2="572" y2="246" stroke="#ffd98a" stroke-width="3" stroke-dasharray="3 9"/></g></g></g></g></g><rect y="268" width="680" height="132" fill="#02040a" opacity="0.9"/><path d="M0 268 Q85 265 170 268 T340 268 T510 268 T680 268" fill="none" stroke="#2a3a55" stroke-width="1" opacity="0.5"/><ellipse class="sp" cx="418" cy="268" rx="40" ry="6" fill="#9fb4d6"/><g class="deb"><g class="bb"><rect x="250" y="270" width="26" height="4" fill="#8a7a62" transform="rotate(-8 263 272)"/><rect x="300" y="274" width="20" height="4" fill="#8a7a62" transform="rotate(10 310 276)"/><rect x="350" y="270" width="30" height="4" fill="#8a7a62" transform="rotate(-4 365 272)"/><rect x="410" y="276" width="18" height="4" fill="#8a7a62" transform="rotate(14 419 278)"/><circle cx="330" cy="272" r="5" fill="#8a7a62"/><circle cx="445" cy="274" r="4" fill="#8a7a62"/></g></g><g transform="translate(140,330) scale(2)"><use class="bb" href="#lbD" style="animation-delay:0s"/></g><g transform="translate(290,340) scale(2)"><use class="bb" href="#lbD" style="animation-delay:0.8s"/></g><g transform="translate(440,332) scale(2)"><use class="bb" href="#lbD" style="animation-delay:1.6s"/></g><g transform="translate(570,342) scale(2)"><use class="bb" href="#lbD" style="animation-delay:2.4s"/></g><g class="l1"><text x="56" y="110" class="z2">Lampu kapal masih menyala</text></g><g class="l2"><text x="56" y="110" class="z2">Lampu padam, tinggal siluet hitam</text></g><g class="l3"><text x="56" y="110" class="z1">02.20</text><text x="56" y="132" class="z2">kapal hilang dari permukaan</text></g><g class="l4"><text x="56" y="160" class="z5">Yang terlihat hanya lampu sekoci</text></g><g class="l5"><text x="630" y="394" class="z5" text-anchor="end">sekitar 705 orang selamat</text></g></svg></div>
+<div class="figbar"><figcaption>Rekonstruksi berdasarkan kesaksian: lampu padam, kapal tinggal siluet hitam di depan bintang, lalu hilang. Di permukaan hanya terlihat lampu kecil di sekoci.</figcaption><button class="btn rp" type="button"><span aria-hidden="true">&#8635;</span> Tekan untuk ulangi</button></div></figure>
+<p class="src">Sumber: laporan Wreck Commissioner, Titanic Inquiry Project, Encyclopedia Titanica (kumpulan kesaksian tentang lampu padam).</p></div></details>
+</section>
+
+<section class="sec reveal" id="penutup">
+<div class="kicker">Penutup</div>
+<h2>Bukan Satu Kesalahan</h2>
+<p>Titanic tenggelam bukan karena satu kesalahan. Pada malam itu, hampir setiap keputusan masih sesuai kebiasaan zamannya: kapal di jalur itu biasa mempertahankan haluan dan kecepatan di cuaca cerah sambil mengandalkan pengintai, aturan sekoci dihitung dari tonase kapal, dan pesan radio yang tidak sampai ke anjungan dianggap urusan operator. Di atas kertas, masing-masing tampak wajar. Bersama-sama, semuanya berujung pada malam 14 April.</p>
+<p>Setelah itu aturan berubah. Konvensi SOLAS 1914 mewajibkan sekoci dan pelampung untuk semua orang di kapal, dan International Ice Patrol dibentuk untuk memantau gunung es di jalur pelayaran. Bangkainya baru ditemukan 73 tahun kemudian, dan sampai sekarang terus digerogoti mikroba. Kapal yang disebut &quot;tidak dapat tenggelam&quot; memang tenggelam, tetapi pelajaran terbesarnya bukan tentang kesombongan, melainkan tentang aturan yang usang dan peringatan yang tidak sampai ke orang yang bisa bertindak.</p>
+
+<div class="note"><b>Catatan angka.</b> Beberapa angka berbeda antar sumber, jadi ditulis kira-kira: jumlah korban sekitar 1.500 (1.490 menurut laporan Inggris, 1.517 menurut laporan Senat AS), jumlah peringatan es (enam atau tujuh pesan), dan persyaratan sekoci aturan 1894 (962, 990, atau 1.060 orang). Gambar bangkai dan adegan tenggelam adalah rekonstruksi, bukan foto.</div>
+</section>
+
+<section class="sec end" id="sumber">
+<div class="kicker">Sumber</div>
+<h2>Daftar Sumber</h2>
+<div class="srcg">Sumber primer</div>
+<ul class="srcs">
+<li><a href="https://www.titanicinquiry.org/BOTInq/BOTReport/botRep01.php" rel="noopener">Laporan Wreck Commissioner Inggris, 1912</a></li>
+<li><a href="https://www.titanicinquiry.org/BOTInq/BOTReport/botRepMessages.php" rel="noopener">Laporan Wreck Commissioner: ice messages received</a></li>
+<li><a href="https://www.titanicinquiry.org/BOTInq/BOTReport/botRepAction.php" rel="noopener">Laporan Wreck Commissioner: action that should have been taken</a></li>
+<li><a href="https://www.titanicinquiry.org/BOTInq/BOTReport/botRepFindings.php" rel="noopener">Laporan Wreck Commissioner: findings</a></li>
+<li><a href="https://www.titanicinquiry.org/BOTInq/BOTReport/botRepAssist.php" rel="noopener">Laporan Wreck Commissioner: assistance</a></li>
+<li><a href="https://www.titanicinquiry.org/BOTInq/BOTReport/botRepSaved.php" rel="noopener">Laporan Wreck Commissioner: numbers saved</a></li>
+<li><a href="https://www.titanicinquiry.org/BOTInq/BOTReport/botRepLSApp.php" rel="noopener">Laporan Wreck Commissioner: life-saving appliances</a></li>
+<li><a href="https://www.titanicinquiry.org/BOTInq/BOTReport/botRepBOT.php" rel="noopener">Laporan Wreck Commissioner: Board of Trade's administration</a></li>
+<li><a href="https://www.titanicinquiry.org/BOTInq/BOTReport/BOTRepBoats.php" rel="noopener">Laporan Wreck Commissioner: saving and rescue</a></li>
+<li><a href="https://www.titanicinquiry.org/BOTInq/BOTInq02Header2.php" rel="noopener">Penyelidikan Inggris, hari ke-2</a></li>
+<li><a href="https://www.titanicinquiry.org/USInq2/AmInq01Rostron04.php" rel="noopener">Penyelidikan Senat AS: kesaksian Kapten Rostron</a></li>
+<li><a href="https://www.titanicinquiry.org/USInq2/AmInq04Fleet01.php" rel="noopener">Penyelidikan Senat AS: kesaksian Frederick Fleet</a></li>
+<li><a href="https://www.titanicinquiry.org/USInq/AmInq17KnappMemo03.php" rel="noopener">Penyelidikan Senat AS: tabel posisi kapal</a></li>
+<li><a href="https://www.titanicinquiry.org/ships/carpathia.php" rel="noopener">Titanic Inquiry Project: Carpathia</a></li>
+</ul>
+<div class="srcg">Lembaga dan referensi</div>
+<ul class="srcs">
+<li><a href="https://www.britannica.com/summary/Titanic" rel="noopener">Britannica: Titanic</a></li>
+<li><a href="https://www.rmg.co.uk/stories/maritime-history/rms-titanic-facts" rel="noopener">Royal Museums Greenwich: RMS Titanic facts</a></li>
+<li><a href="https://blogs.loc.gov/law/2012/04/failure-to-update-the-law-a-titanic-mistake/" rel="noopener">Library of Congress: Failure to Update the Law a Titanic Mistake</a></li>
+<li><a href="https://www.titanicbelfast.com/history-of-titanic/titanic-stories/finding-titanic-from-search-to-seabed/" rel="noopener">Titanic Belfast: Finding Titanic, From Search to Seabed</a></li>
+<li><a href="https://historyrevealed.com/period/20th-century/titanic-wreck-when-where-discovered" rel="noopener">BBC History Revealed: Titanic wreck, when and where discovered</a></li>
+<li><a href="https://www.nationalgeographic.com/history/article/titanic-wreck-site-history" rel="noopener">National Geographic: What we've learned and lost since the Titanic wreck was found</a></li>
+<li><a href="https://www.history.com/articles/titanic-captain-edward-smith-final-hours-death" rel="noopener">History.com: What Was the Titanic's Captain Doing While the Ship Sank?</a></li>
+</ul>
+<div class="srcg">Sumber sekunder</div>
+<ul class="srcs">
+<li><a href="https://titanicconnections.com/tag/funnels/" rel="noopener">Titanic Connections: The Funnels</a></li>
+<li><a href="https://www.nationalarchives.gov.uk/explore-the-collection/stories/the-convention-for-the-safety-of-life-at-sea/" rel="noopener">The National Archives (Inggris): The Convention for the Safety of Life at Sea</a></li>
+<li><a href="https://en.wikipedia.org/wiki/International_Ice_Patrol" rel="noopener">Wikipedia: International Ice Patrol</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sinking_of_the_Titanic" rel="noopener">Wikipedia: Sinking of the Titanic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wreck_of_the_Titanic" rel="noopener">Wikipedia: Wreck of the Titanic</a></li>
+<li><a href="https://naval-encyclopedia.com/ocean-liners/rms-titanic-1911" rel="noopener">Naval Encyclopedia: RMS Titanic (1911)</a></li>
+<li><a href="https://www.mentalfloss.com/posts/titanic-myths-debunked" rel="noopener">Mental Floss: 8 Twisted Titanic Myths, Debunked</a></li>
+<li><a href="https://www.samford.edu/arts-and-sciences/news/2013/JMCs-Williams-Tells-Amazing-Story-of-Titanic-Survivors" rel="noopener">Samford University: Williams tells story of Titanic survivors</a></li>
+<li><a href="https://www.ebsco.com/research-starters/oceanography/ballard-discovers-lost-ship-titanic" rel="noopener">EBSCO Research Starters: Ballard Discovers the Lost Ship Titanic</a></li>
+<li><a href="https://www.encyclopedia-titanica.org/community/goto/post?id=381913" rel="noopener">Encyclopedia Titanica: kumpulan kesaksian tentang lampu padam</a></li>
+<li><a href="https://worldhistoryedu.com/how-cold-was-the-water-when-the-titanic-sank/" rel="noopener">World History Edu: How Cold Was the Water When the Titanic Sank</a></li>
+</ul>
+</section>
+
+</div>
+</main>
+
+<script>
+(function(){
+  var go=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('go');go.unobserve(e.target)}})},{threshold:.3});
+  document.querySelectorAll('svg.vz[data-auto]').forEach(function(s){go.observe(s)});
+  document.querySelectorAll('figure.ill .rp').forEach(function(b){b.addEventListener('click',function(){var s=b.closest('figure').querySelector('svg.vz');s.classList.remove('go');void s.getBoundingClientRect();s.classList.add('go')})});
+  var rv=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');rv.unobserve(e.target)}})},{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(function(el){rv.observe(el)});
+  /* bangkai satu tahap */
+  var sb=document.getElementById('b'),dp=document.getElementById('dp'),raf;
+  function depth(){cancelAnimationFrame(raf);var t0=null;var red=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(red){dp.textContent='3.800 m';return}
+    function f(ts){if(t0===null)t0=ts;var p=Math.min((ts-t0)/8000,1),e=p*p*p;var v=Math.round(3800*e/10)*10;dp.textContent=String(v).replace(/\B(?=(\d{3})+(?!\d))/g,'.')+' m';if(p<1)raf=requestAnimationFrame(f)}
+    raf=requestAnimationFrame(f)}
+  function play(){sb.classList.remove('go');void sb.getBoundingClientRect();sb.classList.add('go');depth()}
+  document.getElementById('brp').addEventListener('click',play);
+  var fb=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){play();fb.unobserve(e.target)}})},{threshold:.3});fb.observe(sb);
+})();
+</script>
+
+<script>
+  const savedTheme = localStorage.getItem('kbdi-theme');
+  if (savedTheme === 'light') document.documentElement.classList.add('light');
+
+  fetch('https://edukbdi.github.io/header.html')
+    .then(r => r.text())
+    .then(html => {
+      document.body.insertAdjacentHTML('afterbegin', html);
+      const header = document.getElementById('kbdi-header');
+      if (savedTheme === 'light') header.classList.add('kbdi-light');
+      document.getElementById('kbdiThemeToggle').addEventListener('click', function() {
+        const isLight = document.documentElement.classList.toggle('light');
+        header.classList.toggle('kbdi-light', isLight);
+        localStorage.setItem('kbdi-theme', isLight ? 'light' : 'dark');
+        const footer = document.getElementById('kbdi-footer');
+        if (footer) footer.classList.toggle('kbdi-light', isLight);
+      });
+    });
+
+  fetch('https://edukbdi.github.io/footer.html')
+    .then(r => r.text())
+    .then(html => {
+      document.body.insertAdjacentHTML('beforeend', html);
+      const footer = document.getElementById('kbdi-footer');
+      if (footer && savedTheme === 'light') footer.classList.add('kbdi-light');
+    });
+</script>
+</body>
+</html>
